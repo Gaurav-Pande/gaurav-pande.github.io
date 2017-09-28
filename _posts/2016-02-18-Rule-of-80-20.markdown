@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "The Rule of 80/20"
+date:   2016-02-18 08:43:59
+author: Gaurav Pande
+categories: Epiphany
+---
+
+**While** coding in computer science, I encountered a peculiar theorem known as "80/20 rule". In the domain of computer language when you develop a language you design its grammar with a minimal language set so that maximum words/strings can be generated from fewer words. The purpose of minimal language set is that it provides a very simple language that most of the applications can use for simple operations. Now here is the startling thing that  often in languages, most users (say 80%)of the language utilize only 20% of the commands.  We call this as the 80/20 rule of languages. I found this rule as very interesting and later I did some churning and research on this rule, and it came to me a great surprise that this rule drives the whole world in a very interesting and stunning way.
+
+Vilfredo Pareto, the Italian economist, discovered 80/20 principle, which now referred to as Pareto's rule. He discovered that 80% of the output results from the 20% of the input. So if you deeply observe around you than you can say that 80 percent of the consequences follows from 20 percent of causes, 80 percent of result comes from 20 percent of effort. It has been even discovered that just 700 common words  design two-third of our conversation. These words account for 80 percent of our common speech. So it would be apt to deduce that a student covers 80 percent of his syllabus  in just 20 percent of his study hours.About 80 percent of the paper in examination comes from 20 percent of the syllabus, 20 percent of the people at any firm generates 80 percent of productivity; the opinion of 20 percent of the people defines the society;the output of 20 percent of the population defines the economy of the country.
+
+ 
+![Image](https://github.com/Gaurav-Pande/gaurav-pande.github.io/blob/master/assets/post3.jpg?raw=true)
+
+
+80/20 is the secret of achieving more with less. Strive for excellence in a few things than good enough performances in many.The tragedy with us is that almost four-fifths of what is happening in our life is yielding very less result in return. we focus too much on 80 % which yields on 20 %. We truly need to revamp our outlooks towards our goals and dreams.Effectiveness in not about what happens to 80%, but how we utilize, manage and control 20%. 20% of our time actually defines what we are and what we gonna be.20 % of the brain is sufficient  to do wondrous things yet we utilize only 1% of that 20 %. 
+
+Our society has forfeited such thinking from the people who wants to pursue goals in one specific direction and they don't want to accept that it really 20 percent of our actions which is going to define Life. Our parents are worried more about our food and fodder stability than on what really their son or daughter wants to be. If the son wants to pursue his dreams on playing a sport and wants to follow it his entire life, he is being told that it is a useless thing,  go study and make money to get settled and astonishingly it is not completely their mistake. The trending of society has filled the vibes in the air with such thoughts. The National concerns like population explosion, political dilemmas, reservation all such things are responsible for shaping the minds of the society which is shaping our thinking, our parents thinking and thus society's thinking. The extent to which this rat race has dominated our country is directly or indirectly affecting the thought process of the youths of our nation. 
+
+Nevertheless, there are people as I quoted earlier also who are 20 percent among the 80 percent who are really making a difference, and by those 20 percent, I am surely not pointing towards all the political leaders of the country, all the wealthy people in the country. I am pointing it towards any anonymous person who is having the courage to pursue his dreams and is willing to take any risk in order to make his or her dreams comes true. As the Facebook founder and  21st-century multi-billionaire Mark Zuckerberg quoted that "In a world that is changing really quickly, the only strategy that is guaranteed to fail is not taking risk to pursue your dream". 

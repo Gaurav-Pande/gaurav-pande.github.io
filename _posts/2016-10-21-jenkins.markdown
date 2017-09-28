@@ -1,0 +1,368 @@
+---
+layout: post
+title:  "Triggering Jenkins Job using Java and DOM parser"
+subtitle: "Usefull Code"
+date:   2016-10-21 08:43:59
+author: Gaurav Pande
+categories: Programming
+cover: "/assets/interviewbit.jpg"
+tag: Jenkins
+---
+
+**Steps**
+This piece of code lets you do following points
+ * It fetches the crumb from the jenkis.
+ * It connects with jenkins.
+ * It then manipulated the local config.xml and make some changes in it.
+ * It than inject these changes to the jenkins and creates a new job.
+ * It run the build of the job.
+
+```language-java
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.Reader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Base64;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+
+import org.json.JSONObject;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+import org.xml.sax.SAXParseException;
+
+
+
+public class jenkins {
+    final static String name = "admin";
+    final static String password = "0aeef5b319ee4570b2d79e6830ec6f2c";
+    final String SERVER="http://localhost:8080";
+    final static String authString = name + ":" + password;
+
+public static void main(String args[] ) throws Exception {
+	 
+	String encodedAuthStr = Base64.getEncoder().encodeToString(authString.getBytes());
+
+    try {
+    	//GEtting the crumb
+     	URL url = new URL("http://localhost:8080/crumbIssuer/api/json");
+    	HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("GET");
+        conn.setRequestProperty("Accept", "application/json");
+        conn.setRequestProperty("Authorization", "Basic " + encodedAuthStr);
+        if (conn.getResponseCode() != 200) {
+            throw new RuntimeException("Failed : HTTP error code : " + conn.getResponseCode());
+        }
+        BufferedReader br = new BufferedReader(new InputStreamReader((conn.getInputStream())));
+        String output,temp = null;
+        while ((output = br.readLine()) != null) {
+        	temp = output;
+       //     System.out.println(output);
+        }
+        JSONObject jsonObj = new JSONObject(temp);
+        conn.disconnect();
+ 
+        
+        
+        //creating a project folder
+        String projname="gauravpj";
+        url = new URL("http://localhost:8080/createItem?name="+project-name+"&mode=com.cloudbees.hudson.plugins.folder.Folder&from=&json=%7B%22name%22%3A%22FolderName%22%2C%22mode%22%3A%22com.cloudbees.hudson.plugins.folder.Folder%22%2C%22from%22%3A%22%22%2C%22Submit%22%3A%22OK%22%7D&Submit=OK");
+        conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("POST");
+      //  conn.setDoOutput(true);
+        conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+        conn.setRequestProperty("Jenkins-Crumb",(String) jsonObj.get("crumb") );
+        conn.setRequestProperty("Authorization", "Basic " + encodedAuthStr);
+        
+        if (conn.getResponseCode() != 200) {
+            System.out.println("folder created");
+        }
+        conn.disconnect();        
+        
+        
+        
+        
+        
+        
+        
+        //Dummy data to create user, developer , admins
+        ArrayList<String> user = new ArrayList<String>();
+        user.add("a");
+        user.add("a");
+        user.add("c");
+        ArrayList<String> developer = new ArrayList<String>();
+        developer.add("x");
+        developer.add("y");
+        ArrayList<String> admin = new ArrayList<String>();
+        admin.add("l");
+        
+        
+        
+        //Updating the config.xml file
+        jenkins jen = new jenkins();
+        jen.UpdateConfig("opendaylight","sumikap",user,developer,admin);
+        
+        
+        
+        
+        //Reading the config.xml
+        Reader fileReader = new FileReader("config.xml");
+        BufferedReader bufReader = new BufferedReader(fileReader);
+        StringBuilder sb = new StringBuilder();
+        String line = bufReader.readLine();
+        while( line != null){
+            sb.append(line).append("\n");
+            line = bufReader.readLine();
+        }
+        String xml2String = sb.toString();
+        System.out.println("XML to String using BufferedReader : ");
+        System.out.println(xml2String);
+        bufReader.close();
+        
+
+       
+        
+
+        //creating a new job 
+        url = new URL(   "http://localhost:8080/job/"+projname+"/createItem?name=Jobname”);
+        conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("POST");
+        conn.setDoOutput(true);
+        conn.setRequestProperty("Content-Type", "text/xml");
+        conn.setRequestProperty("Jenkins-Crumb",(String) jsonObj.get("crumb") );
+        conn.setRequestProperty("Authorization", "Basic " + encodedAuthStr);
+        OutputStreamWriter writer = new OutputStreamWriter(conn.getOutputStream());
+        writer.write(xml2String);
+        writer.close();	
+        if (conn.getResponseCode() != 200) {
+            System.out.println("I guess something wrong happened with jenkins!! DOn't worry I will resolve it :-)");
+        }
+        BufferedReader br11 = new BufferedReader(new InputStreamReader((conn.getInputStream())));
+        String output11,temp11 = null;
+        while ((output11 = br11.readLine()) != null) {
+        	temp11 = output11;
+            System.out.println(output11);
+        }
+      //  System.out.println(temp1);
+        conn.disconnect();
+    } catch (MalformedURLException e) {
+        throw new RuntimeException(e);
+    } catch (IOException e) {
+        throw new RuntimeException(e);
+}
+}
+
+public void UpdateConfig(String newUrl,String credentialId,ArrayList<String> user,ArrayList<String> developer,ArrayList<String> admin){
+	String repolink = “jenkins repo link”+newUrl;
+	 try {
+         DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
+         DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
+         Document doc = docBuilder.parse (new File("config.xml"));
+         
+         // normalize text representation
+         doc.getDocumentElement ().normalize ();
+         NodeList list = doc.getElementsByTagName("locations");
+         for(int s=0; s<list.getLength() ; s++){
+             Node firstNode = list.item(s);
+             if(firstNode.getNodeType() == Node.ELEMENT_NODE){
+                 Element firstElement = (Element)firstNode;
+                 //----
+                 NodeList remote = firstElement.getElementsByTagName("remote");
+                 Element remoteElement = (Element)remote.item(0);
+                 NodeList remoteValue = remoteElement.getChildNodes();
+              //   System.out.println("remote: " + 
+                //        ((Node)remoteValue.item(0)).getNodeValue().trim());
+                 remoteValue.item(0).setTextContent(repolink);
+                 		                    	                    
+               //  System.out.println("Remote : " + 
+	            //               ((Node)remoteValue.item(0)).getNodeValue().trim());
+             }//end of if clause
+             
+             
+             
+             
+         //setting credential id
+             if(credentialId !=null){
+            	//setting credential id 
+            	 String credentialid = fetch_credetntial(credentialId);
+                 doc.getDocumentElement ().normalize ();
+    	            System.out.println ("Root element of the doc is " + 
+    	            doc.getDocumentElement().getNodeName());
+    	            NodeList list1 = doc.getElementsByTagName("locations");
+    	            //int totalPersons = list.getLength();
+    	            for(int x=0; x<list1.getLength() ; x++){
+    	                Node firstNode1 = list1.item(x);
+    	                if(firstNode1.getNodeType() == Node.ELEMENT_NODE){
+    	                    Element firstElement = (Element)firstNode1;
+    	                    NodeList remote = firstElement.getElementsByTagName("credentialsId");
+    	                    Element remoteElement = (Element)remote.item(0);
+    	                    NodeList remoteValue = remoteElement.getChildNodes();
+    	                    remoteValue.item(0).setTextContent(credentialid);
+    	                }//end of if clause
+    	            }
+             }
+          
+             
+             
+             
+             
+         //setting roles for user 
+             for(int x =0;x<user.size();x++)
+             {
+            	 Node readrole = doc.getElementsByTagName("hudson.security.AuthorizationMatrixProperty").item(0);
+                 Element read = doc.createElement("permission");
+                 Element build = doc.createElement("permission");
+                 String element1 = "hudson.model.Item.Read:"+user.get(x);
+                 String element2 = "hudson.model.Item.Build:"+user.get(x);
+                 build.appendChild(doc.createTextNode(element2));
+         		read.appendChild(doc.createTextNode(element1));
+         		((Node) readrole).appendChild(read);
+         		((Node) readrole).appendChild(build);
+            	 
+             }
+         
+
+       
+ 		
+ 		//setting roles for developer
+             for(int x=0;x<developer.size();x++){
+            	 Node developerrole = doc.getElementsByTagName("hudson.security.AuthorizationMatrixProperty").item(0);
+                 Element read = doc.createElement("permission");
+                 Element build = doc.createElement("permission");
+                 Element configure = doc.createElement("permission");
+                 String element1 = "hudson.model.Item.Read:"+developer.get(x);
+                 String element2 = "hudson.model.Item.Build:"+developer.get(x);
+                 String element3 = "hudson.model.Item.Configure:" + developer.get(x);
+                 build.appendChild(doc.createTextNode(element2));
+         		read.appendChild(doc.createTextNode(element1));
+         		configure.appendChild(doc.createTextNode(element3));
+         		((Node) developerrole).appendChild(read);
+         		((Node) developerrole).appendChild(build);
+         		((Node) developerrole).appendChild(configure);
+            	 
+             }
+ 		
+             
+             
+ 		//setting roles for admin
+            for(int x =0;x<admin.size();x++){
+            	Node adminrole = doc.getElementsByTagName("hudson.security.AuthorizationMatrixProperty").item(0);
+                Element read = doc.createElement("permission");
+                Element build = doc.createElement("permission");
+                Element configure = doc.createElement("permission");
+                Element update = doc.createElement("permission");
+                Element release = doc.createElement("permission");
+                Element promote = doc.createElement("permission");
+                Element delete = doc.createElement("permission");
+                Element workspace = doc.createElement("permission");
+                Element delete1 = doc.createElement("permission");
+                Element managedomain = doc.createElement("permission");
+                Element replay = doc.createElement("permission");
+                Element itemcancel = doc.createElement("permission");
+                Element itemdelete = doc.createElement("permission");
+                Element credentialview = doc.createElement("permission");
+                Element credentialcreate = doc.createElement("permission");
+                Element scmtag = doc.createElement("permission");
+                Element itemmove = doc.createElement("permission");
+                Element itemdiscover = doc.createElement("permission");
+                Element itemupdate = doc.createElement("permission");
+                
+                
+                String element1 = "hudson.model.Item.Read:"+admin.get(x);
+                String element2 = "hudson.model.Item.Build:"+admin.get(x);
+                String element3 = "hudson.model.Item.Configure:" + admin.get(x);
+                build.appendChild(doc.createTextNode(element2));
+        		read.appendChild(doc.createTextNode(element1));
+        		configure.appendChild(doc.createTextNode(element3));
+        		((Node) adminrole).appendChild(read);
+        		((Node) adminrole).appendChild(build);
+        		((Node) adminrole).appendChild(configure);
+            	
+            }
+         }
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+  		Transformer transformer = transformerFactory.newTransformer();
+  		DOMSource source = new DOMSource(doc);
+  		StreamResult result = new StreamResult(new File("config.xml"));
+  		transformer.transform(source, result);
+	   }catch (SAXParseException err) {
+	        System.out.println ("** Parsing error" + ", line " 
+	             + err.getLineNumber () + ", uri " + err.getSystemId ());
+	        System.out.println(" " + err.getMessage ());
+
+	        }catch (SAXException e) {
+	        Exception x = e.getException ();
+	        ((x == null) ? e : x).printStackTrace ();
+
+	        }catch (Throwable t) {
+	        t.printStackTrace ();
+	        }
+	
+}
+
+private String fetch_credetntial(String credentialId) {
+	String result = null ;
+	// TODO Auto-generated method stub
+	try {
+        DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
+        Document doc = docBuilder.parse (new File("credentials.xml"));
+        
+        // normalize text representation
+        doc.getDocumentElement ().normalize ();
+       // System.out.println ("Root element of the doc is " + 
+      //  doc.getDocumentElement().getNodeName());
+
+        NodeList list1 = doc.getElementsByTagName("com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl");
+        
+        for(int s=0;s<list1.getLength();s++){
+       	 Node list = doc.getElementsByTagName("com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl").item(s);
+       	 Element firstElement = (Element)list;
+            NodeList user = firstElement.getElementsByTagName("username");
+            Element userElement = (Element)user.item(0);
+            NodeList userValue = userElement.getChildNodes();
+            NodeList cred = firstElement.getElementsByTagName("id");
+            Element credElement = (Element)cred.item(0);
+            NodeList credValue = credElement.getChildNodes();
+          //  System.out.println(credValue.item(0).getTextContent());
+            System.out.println("username: " + 
+                   userValue.item(0).getTextContent());
+	         if(userValue.item(0).getTextContent().contentEquals(credentialId)){
+	        	 System.out.println(credValue.item(0).getTextContent());
+	        	 result =  credValue.item(0).getTextContent();
+	        	 break;
+	         }
+        }
+	   }catch (SAXParseException err) {
+	        System.out.println ("** Parsing error" + ", line " 
+	             + err.getLineNumber () + ", uri " + err.getSystemId ());
+	        System.out.println(" " + err.getMessage ());
+
+	        }catch (SAXException e) {
+	        Exception x = e.getException ();
+	        ((x == null) ? e : x).printStackTrace ();
+
+	        }catch (Throwable t) {
+	        t.printStackTrace ();
+	        }
+	return result;
+}
+
+
+}
+
+```

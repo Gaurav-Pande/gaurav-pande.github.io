@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "Charlie's Daughter"
+date:   2016-01-05 08:43:59
+author: Gaurav Pande
+categories: Intrigue
+---
+
+
+**Here** is another encounter with an intriguing letter.In the artical it is told that the letter was written by Charlie Chaplin to his daughter. I cannot prove the authenticity of the letter, but whoever wrote, have done a beautiful job here.
+
+
+My girl, 
+
+Now it is night. One Christmas night. All the armed warriors of my little fortress fell asleep. Your brother and your sister are sleeping. Even your mother is sleeping now. On my way to this half-lighted room, I was on the verge to wake up the sleeping chicks.
+How far away you are from me! But may I become blind if your image is not always in front of my eyes. Your picture is here on the table and here, near my heart. But where are you? There in the fairy Paris dancing on a grand theatrical stage from Champs Elysees. I know this very well, though it seems to me that in the silence of the night I hear footsteps, see your eyes that shine like stars in the winter sky. I hear you acting in this festive and illuminated play the role of the Persian beauty who is in the captivity of Tatar khan. Be beautiful and dance! Be a star and shine! But if the enthusiasm and gratitude of the audience makes you drunk, if the scent of flowers gave to you swallow your head, then sit in a little corner and read my letter, listen to the voice of your heart.
+I am your father, Geraldine!
+I’m Charlie, Charlie Chaplin!
+Do you know how many nights I sat near your crib when you were a baby, telling you the tale of Sleeping Beauty, watchful dragon? And when the sleep came to rest my eyes, I laughed at him and said: “Go away! My sleep, these are my daughter's dreams!“ I saw your dreams, Geraldine, have seen your future and your present day. I saw a girl playing on the stage, a fairy dancing in the sky. I heard the crowd say: “See that girl? She's the daughter of an old fool. Remember? His name was Charlie.”
+Yes! I’m Charlie! I am an old fool!
+Today is your turn. Dance! I danced in large tattered pants and you dance in a silk dress of a princess. These dances and the sound of applause will rise you into heaven sometimes. Fly! Fly over there! But come back on earth too! You should see people's lives, the lives of the street dancers who dance shivering of cold and hunger. I was like them, Geraldine! During those nights, those magical nights when you fall asleep, lulled by my stories, I was awake. I looked at your face, listened to your heart beats and asked myself: "Charley, will this kitten ever know you?" You do not know me, Geraldine... I retold you many tales in those nights, but my tale - never. But it's also interesting. This is a tale about a hungry buffoon, who sang and danced in the slums of London, and then collected alms... This is my story! I got to know what hunger is and what is like not to have a roof over your head. More than that, I experienced the humiliating pain of a wanderer-jester, who had in his chest a raging ocean of pride and this pride was painfully wounded by those tossed coins. And yet I am alive, so let's leave this.
+Let's better talk about you!
+
+![Image](https://github.com/Gaurav-Pande/gaurav-pande.github.io/blob/master/assets/post5.jpg?raw=true)
+
+After your name - Geraldine - comes my name Chaplin. With this name I have amused people all over for over forty years. But I cried more than they were laughing! Geraldine, in the world you live there is not only dance and music!
+At midnight, when you come out from the huge hall, you can forget about rich fans, but do not forget to ask the taxi driver, who will carry you home, about his wife. And if she is pregnant, if they do not have money for diapers for their future child, put some money in his pocket. I told the bank to pay you these expenses. But to all the others pay strictly on the account. From time to time use the subway or the bus, walk on foot and explore the city. Look at people! Look at widows and orphans! And at least once per day say to yourself: “I am just like them!” 
+Yes! You are one of them, my girl. Moreover! The art before giving wings to a person, so one could fly up, usually breaks one's legs. And if someday you will find yourself feeling more important than your audience, leave the scene. Catch the first taxi and visit the neighborhood of Paris. I know it very well! There you will see a lot of dancers just like you and even more beautiful, graceful, and with more pride. The dazzling limelight from your theater will not be there at all. The moon is their floodlight. Look! Look carefully! Don't they dance better than you? Admit it, my girl! There is always somebody who dances better than you, who is playing better than you! And remember, in the Charlie's family there never was any rude person who would use uncensored lexicon for a cab driver or laugh of a beggar who sits on the bank of the Seine...
+I will die, but you will live… I want you to never know what poverty is! With this letter I am sending you a check book so you could spend as you wish. But when you spend two francs, do not forget to remind yourself that the third coin is not yours. It must belong to a stranger who needs it. And you can find this person easily. One has only to want to see these poor strangers and you'll meet them everywhere. I'm talking to you about money because I got to know their devilish power.
+You know, I spent a long time at the circus and was always very worried about funambulists (funambulist - an acrobat who performs on a tightrope or slack rope). But I must tell you that people fall more often on solid ground rather than a funambulist from a wire rope. Perhaps on one of the soirees you will be blinded by the spark of a diamond. Right in that time, it will become a dangerous rope for you and the fall will be inevitable for you. Maybe one day you will be captured by the handsome face of a prince. On the same day, you will become an inexperienced funambulist and inexperienced ones always fall. Do not sell your heart for gold and jewels. Know that the hugest diamond is the Sun. Fortunately, it shines for all.
+And when the time comes, and you will love, then love that man with all my heart. I told your mother to write to you about it. She understands in love more than I do and it's better for her to talk to you about it.
+Your job is very difficult. I know that. Your body is covered only with a piece of silk. For the sake of art, one can appear on stage even naked, but when coming back from there you should be not only dressed but even purer. But nothing and no one else in this world deserves to see even the nails of a girl's feet. Nakedness is a disease of our time.
+I am old and my words might sound funny. But, in my opinion, your naked body should belong to the one who falls in love with your naked soul. Do not be afraid if your opinion upon this subject belongs to a decade ago. Do not worry! This decade will not age you. But as it is, I want you to be the last person who is subject of the naked island!
+I know that fathers and children are in an eternal fight. Fight with me, with my thoughts, my girl! I do not like obedient children. And while from my eyes no tears are running as I am writing this, I want to believe that today's Christmas night will be the night of miracles. I wish a miracle happen and you really understand everything that I wanted to tell you.
+Charlie is older already, Geraldine! Sooner or later, instead of white silk on the scene, you will have to wear black to come to my grave. Now I do not want to upset you. Only from time to time look into the mirror, there you will see my features. Even when the blood in my veins is cool, I don't want you to forget your father - Charlie. I'm not an angel, but always aspired to be a man. Try it and you.
+I kiss you, Geraldine. 
+
+Yours,
+Charlie
