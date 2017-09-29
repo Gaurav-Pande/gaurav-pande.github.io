@@ -33,9 +33,9 @@ You can view my complete resume at [view my resume][resume] or connect with me o
 
 
 <p align="center">
-  <a href="#">What I am Doing</a>
+  <a href="https://photos.app.goo.gl/dNFSmZRkiXe06Oyz2">What I am Doing</a>
   <br>
-  <a href="#">What I am Coding</a>
+  <a href="https://github.com/Gaurav-Pande">What I am Coding</a>
 </p>
 
 
