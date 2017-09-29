@@ -6,7 +6,7 @@ permalink: /about/
 
 <img class="profile" src="{{ site.baseurl }}/assets/gaurav1.jpg" title="Profile Picture">
 
-> ### “Stay Hungry Stay Foolish”
+### Stay Hungry Stay Foolish
 
 
  
