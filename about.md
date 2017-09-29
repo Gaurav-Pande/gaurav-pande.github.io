@@ -6,9 +6,9 @@ permalink: /about/
 
 <img class="profile" src="{{ site.baseurl }}/assets/gaurav1.jpg" title="Profile Picture">
 
-### “Stay Hungry Stay Foolish”
+> ### “Stay Hungry Stay Foolish”
 
-```python
+
  
  I still vividly remember when I was exposed to the unseen world of technology for the first time in 7th standard, being 
  nominated for the project - “Mapping The Neighbourhood” which was launched by the Department of Science & Technology, 
@@ -29,7 +29,7 @@ Machine Learning.
 
 You can view my complete resume at [view my resume][resume] or connect with me on [LinkedIn][linkedin].
 
-```
+
 
 
 <p align="center">
