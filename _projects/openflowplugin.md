@@ -26,7 +26,7 @@ OpenFlowplugin is the Southbound plugin of opendaylight controller. It is the me
 - This way matching of the flows at Network Devices can be optimized and hence accounting to Adaptive and Optimized SDN Networking.
 
 
-**A**s part of this activity I was resposible fro delivering the eviction and vacancy features in Openflowplugin, which were already contributed to openvswitch by my colleagues in TCS. 
+**A**s part of this activity I was resposible for delivering the eviction and vacancy features in Openflowplugin, which were already contributed to openvswitch by my colleagues in TCS. 
 
 **What is Eviction and Vacancy?**
 
