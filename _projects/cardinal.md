@@ -1,15 +1,15 @@
 ---
-
 layout: page
 title: OpenDaylight-Cardinal
-date: 2016-02-18 08:43:59
+date:
+  'Thu Feb 18 2016 14:13:59 GMT+0530 (IST)': null
 permalink: /cardinal/
 categories: sdn
 desc: Opendaylight monitoring as a Service
-
+published: true
 ---
 
-![]({{site.baseurl}}/assets/download.png)
+![download.gif]({{site.baseurl}}/assets/download.gif)
 
 **Technologies** : Java,Maven,Karaf,Jenkins,Opendaylight,SDN
 
@@ -22,6 +22,7 @@ desc: Opendaylight monitoring as a Service
 **Project Proposal** : [https://wiki.opendaylight.org/images/8/89/Cardinal-ODL_Monitoring_as_a_Service_V2.pdf](https://wiki.opendaylight.org/images/8/89/Cardinal-ODL_Monitoring_as_a_Service_V2.pdf)
 
 ---
+
 **I**n current legacy network, NMS (Network Management Systems) is a viable approach to provide a centralized system that monitors and controls remote/managed devices located throughout the network, using for examplle SNMP (the basic protocol). Of-course there are others protocol like TL1, TMF/Corba that are also being leveraged to monitor the managed network.
 
 With the advent of Software Defined Networks, the basic need arises to monitor the network (Controller, deployed features, network etc.). As a first step, on priority the need arises to expose the SDN Controller' (OpenDaylight) health/statistics to existing legacy NMS applications. With SDN networks yet to provide inter-working for monitoring/management functionality, the need arises to at least enable the NMS operators to get access to health/diagnostics information from/of SDN Controller.
@@ -64,7 +65,6 @@ Cardinal (OpenDaylight Monitoring as a Service) proposes a solution in OpenDayli
 
 **B**eing the initial committer, I started the building of project from scratch and committed 16k lines of code in Opendaylight to support the overall functionalitied of Cardinal.
 
-![download.png]({{site.baseurl}}/assets/download.png)
 
 
 ---
