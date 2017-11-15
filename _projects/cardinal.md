@@ -9,7 +9,6 @@ desc: Opendaylight monitoring as a Service
 published: true
 ---
 
-![download.gif]({{site.baseurl}}/assets/download.gif)
 
 **Technologies** : Java,Maven,Karaf,Jenkins,Opendaylight,SDN
 
@@ -66,5 +65,6 @@ Cardinal (OpenDaylight Monitoring as a Service) proposes a solution in OpenDayli
 **B**eing the initial committer, I started the building of project from scratch and committed 16k lines of code in Opendaylight to support the overall functionalitied of Cardinal.
 
 
+![download.gif]({{site.baseurl}}/assets/download.gif)
 
 ---
