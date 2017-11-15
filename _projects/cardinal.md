@@ -1,12 +1,14 @@
 ---
+
 layout: page
 title: OpenDaylight-Cardinal
-date: {}
+date: 2016-02-18 08:43:59
 permalink: /cardinal/
 categories: sdn
 desc: Opendaylight monitoring as a Service
-published: true
+
 ---
+
 ![]({{site.baseurl}}/assets/download.png)
 
 **Technologies** : Java,Maven,Karaf,Jenkins,Opendaylight,SDN
