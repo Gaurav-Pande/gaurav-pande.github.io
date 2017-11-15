@@ -2,7 +2,7 @@
 layout: page
 title: 'NEMO:Intent Base Networking'
 date:
-  'Fri Jan 01 2016 14:13:59 GMT+0530 (IST)': null
+  'Sun Nov 20 2016 14:13:59 GMT+0530 (IST)': null
 permalink: /intent/
 categories: sdn
 desc: Opendaylight's Intent Based Networking Use case
