@@ -10,6 +10,8 @@ published: true
 
 **Technologies** : Java,Maven,Karaf,Jenkins,Opendaylight,SDN
 
+**Duration** : March-2015 to August-2016
+
 **Repository** : [https://github.com/opendaylight/cardinal](https://github.com/opendaylight/cardinal)
 
 **LOC committed** : [https://github.com/opendaylight/cardinal/graphs/contributors](https://github.com/opendaylight/cardinal/graphs/contributors)
