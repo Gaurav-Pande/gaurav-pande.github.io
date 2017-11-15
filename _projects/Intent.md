@@ -11,7 +11,7 @@ published: true
 
 **Technologies** : Java,Maven,Karaf,SDN,Intent Based Networking
 
-**Duration** : March-2016 to May-2016
+**Duration** : January-2016 to March-2016
 
 **Official Repository** : [Nemo](https://github.com/opendaylight/nemo)
 
