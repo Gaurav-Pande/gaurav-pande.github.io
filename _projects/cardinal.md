@@ -1,13 +1,13 @@
 ---
-
 layout: page
 title: OpenDaylight-Cardinal
-date: 2016-10-20 08:43:59
+date: {}
 permalink: /cardinal/
 categories: sdn
 desc: Opendaylight monitoring as a Service
-
+published: true
 ---
+![]({{site.baseurl}}/assets/download.png)
 
 **Technologies** : Java,Maven,Karaf,Jenkins,Opendaylight,SDN
 
@@ -61,5 +61,8 @@ Cardinal (OpenDaylight Monitoring as a Service) proposes a solution in OpenDayli
 
 
 **B**eing the initial committer, I started the building of project from scratch and committed 16k lines of code in Opendaylight to support the overall functionalitied of Cardinal.
+
+![download.png]({{site.baseurl}}/assets/download.png)
+
 
 ---
