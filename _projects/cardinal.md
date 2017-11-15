@@ -1,11 +1,12 @@
 ---
+
 layout: page
 title: Opendaylight-Cardinal
 date: {}
 permalink: /cardinal/
 categories: sdn
 desc: Opendaylight monitoring as a Service
-published: true
+
 ---
 
 **Technologies** : Java,Maven,Karaf,Jenkins,Opendaylight,SDN
@@ -56,6 +57,7 @@ Cardinal (OpenDaylight Monitoring as a Service) proposes a solution in OpenDayli
 
 - Support REST GET equivalent to SNMP GET requests - to enable SDN Applications to retrieve ODL diagnostics
 - POST to start/stop daemon
+
 
 
 **B**eing the initial committer, I started the building of project from scratch and committed 16k lines of code in Opendaylight to support the overall functionalitied of Cardinal.
