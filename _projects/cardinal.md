@@ -2,7 +2,7 @@
 
 layout: page
 title: Opendaylight-Cardinal
-date: {}
+date: 2016-10-20
 permalink: /cardinal/
 categories: sdn
 desc: Opendaylight monitoring as a Service
