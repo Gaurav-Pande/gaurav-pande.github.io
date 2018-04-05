@@ -5,11 +5,13 @@ date:   2016-01-01 08:43:59
 permalink: /synthetic/
 categories: ml
 desc: "A python utility to generate synthetic data using Numpy"
+
+---
+
 **Technologies**: python,gaussian stats model
 **RepoLink**: https://github.com/Gaurav-Pande/synthetic-data-generation.git
 **Referencedlink**: https://github.com/SheffieldML/GPy.git
 
----
 
 ### The Idea:
 
