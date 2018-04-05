@@ -7,9 +7,10 @@ categories: ml
 desc: "A use case to show ml over opendaylight architecture"
 ---
 
-**Technologies**: Java,Android, PHP,MYSQL
+**Technologies**: Java,Opendaylight,machine learning.
 
 ---
 
+TBD
 
 ---
