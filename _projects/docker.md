@@ -7,7 +7,7 @@ categories: mixed
 desc: "An application for container based logging"
 ---
 
-**Technologies**: Docker,Elastic Searcg,Fluentdb
+**Technologies**: Docker,Elastic Search,Fluentd
 
 
 ---
