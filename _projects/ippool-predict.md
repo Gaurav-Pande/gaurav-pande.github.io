@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Ip Threshold prediction Using Gaussian Stat Model"
+title:  "Ip Threshold prediction Using Spark Ml lib"
 date:   2016-01-01 08:43:59
 permalink: /classifier/
 categories: ml
