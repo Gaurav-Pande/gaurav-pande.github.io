@@ -2,8 +2,8 @@
 layout: page
 title:  "Model Driven Telemetry"
 date:   2016-01-01 08:43:59
-permalink: /sdn/
-categories: Networking
+permalink: /telemetry/
+categories: sdn
 desc: "An opensource stack to visualize, analyze telemetry based data from Networks"
 ---
 
