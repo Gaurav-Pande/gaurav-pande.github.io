@@ -8,7 +8,9 @@ desc: "An opensource stack to visualize, analyze telemetry based data from Netwo
 ---
 
 **Technologies**: ansible,python,docker
+
 **Githublink**: https://github.com/Gaurav-Pande/telemetry-staging-ansible.git
+
 ---
 
 # Consuming Cisco XR Model Driven Streaming Telemetry
