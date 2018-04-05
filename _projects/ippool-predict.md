@@ -7,7 +7,7 @@ categories: ml
 desc: "A application to predict Ip threshold based on historical data"
 ---
 
-**Technologies**: Python,jupyter,Gaussian stat model
+**Technologies**: Python,jupyter,Spark ml lib,scikit learn
 
 ---
 Lately, I have been working on this use case called Ip pool automation which leverages the capabilities that Network Telemetry offers us today. Every solution comes out of challenge or problem that the network faces. Let's understand the problem scenario here first:
