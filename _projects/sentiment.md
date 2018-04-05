@@ -10,6 +10,7 @@ desc: "A machine learning code to analysize sentiments"
 **Technologies**: python,spark-ml,twitter
 
 **Repo Link**: https://github.com/Gaurav-Pande/Spark_Twitter_App.git
+
 ---
 ### Sentiment Analysis
 
