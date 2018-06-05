@@ -10,7 +10,7 @@ desc: "A comparision between rule base and ml base approach for sentiments"
 
 **Technologies**: python,spark-ml,twitter
 
-**Repo Link**: (link)[https://github.com/Gaurav-Pande/Sentiment-Analysis.git]
+**Repo Link**: [link](https://github.com/Gaurav-Pande/Sentiment-Analysis.git)
 
 
 ---
