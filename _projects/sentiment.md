@@ -5,13 +5,12 @@ date:   2016-01-01 08:43:59
 permalink: /sentiment/
 categories: ml
 desc: "A comparision between rule base and ml base approach for sentiments"
+
 ---
 
 **Technologies**: python,spark-ml,twitter
 
 **Repo Link**: https://github.com/Gaurav-Pande/Sentiment-Analysis.git
-
-**Repo Link**: https://github.com/Gaurav-Pande/Spark_Twitter_App.git
 
 
 ---
@@ -129,8 +128,6 @@ we can see above that denominator of both the p(positive/t) and p(negative/t) is
 * I also build a spark-ml app for analysis of twitter sentiment. This is just a very basic learning project that I did in my college to learn about machine learning. Currently I am working on stemming Algorithms to analyse the twitter streams more efficiently.
 
 * learn other algorithms like SVM, Random forest for sentiment analysis
-
-
 
 ---
 
