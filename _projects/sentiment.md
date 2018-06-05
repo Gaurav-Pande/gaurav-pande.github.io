@@ -10,7 +10,7 @@ desc: "A comparision between rule base and ml base approach for sentiments"
 
 **Technologies**: python,spark-ml,twitter
 
-**Repo Link**: https://github.com/Gaurav-Pande/Sentiment-Analysis.git
+**Repo Link**: (link)[https://github.com/Gaurav-Pande/Sentiment-Analysis.git]
 
 
 ---
@@ -130,6 +130,11 @@ So we can compare like this:
 * I also build a spark-ml app for analysis of twitter sentiment. This is just a very basic learning project that I did in my college to learn about machine learning. Currently I am working on stemming Algorithms to analyse the twitter streams more efficiently.
 
 * learn other algorithms like SVM, Random forest for sentiment analysis
+
+## References:
+
+* pluralsite course: [Link](https://app.pluralsight.com/library/courses/building-sentiment-analysis-systems-python/table-of-contents)
+* Naive Bayes : [Link](https://www.geeksforgeeks.org/naive-bayes-classifiers/)
 
 ---
 
