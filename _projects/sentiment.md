@@ -95,9 +95,11 @@ Bayes’ Theorem
 
 Bayes’ Theorem finds the probability of an event occurring given the probability of another event that has already occurred. Bayes’ theorem is stated mathematically as the following equation:
 
- P(A|B) = {P(B|A)* P(A)}/{P(B)} 
 
-where A and B are events and P(B) ? 0.
+P(A|B) = {P(B|A) x P(A)} / {P(B)} 
+
+
+where A and B are events.
 
 Basically, we are trying to find probability of event A, given the event B is true. Event B is also termed as evidence.
 P(A) is the priori of A (the prior probability, i.e. Probability of event before evidence is seen). The evidence is an attribute value of an unknown instance(here, it is event B).
@@ -106,21 +108,21 @@ P(A|B) is a posteriori probability of B, i.e. probability of event after evidenc
 
 In terms of movie review dataset we can say our bayes theorem will looks like this:
 
-
-P(Positive/t) 	=    				P(t/Positive) x P(Positive)/
- 					P(t/Positive) x P(Positive) + P(t/Negative) x P(Negative)
+![Image](https://github.com/Gaurav-Pande/Sentiment-Analysis/blob/master/assets/1.png?raw=true)
 
 
 where t is any review or text.
 
 similary for negative review:
 
-P(Negative/t) =					P(t/Negative) x P(Negative)
-					P(t/Positive) x P(Positive) + P(t/Negative) x P(Negative)
+![Image](https://github.com/Gaurav-Pande/Sentiment-Analysis/blob/master/assets/2.png?raw=true)
                     
 The above is to find probability that the review is actually negative, given the text of the review (use Bayes Theorem)
 
 we can see above that denominator of both the p(positive/t) and p(negative/t) is same, so we can compare only the numerators.
+So we can compare like this:
+
+![Image](https://github.com/Gaurav-Pande/Sentiment-Analysis/blob/master/assets/3.png?raw=true)
 
 
 ## Things To Do:
