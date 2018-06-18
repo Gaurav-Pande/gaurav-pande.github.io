@@ -3,7 +3,7 @@ layout: page
 title:  "Synthetic Data"
 date:   2016-01-01 08:43:59
 permalink: /synthetic/
-categories: ml
+categories: Limbo
 desc: "A python utility to generate synthetic data using Numpy"
 
 ---
