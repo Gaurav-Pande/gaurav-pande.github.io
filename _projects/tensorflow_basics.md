@@ -27,49 +27,49 @@ Or you can just swipe through to grasp the summary.
 * Supervised machine learning algorithm task is to find a mapping function such that we can predict the 
    value of y with input x, that is : y = f(x). finding mapping function f is called supervised learning
    
- * Approximate the learning function f, such that new values of x can be predict the value of y.
+* Approximate the learning function f, such that new values of x can be predict the value of y.
  
- * we use existing training dataset to correct the mapping function approximation. 
- 
- 
- ### Unsupervised ML algorithms:
- 
- * Here we have input variable x but no output variable y.
- 
- * The goal of the algo is the find the model or pattern within the data to learn more about data and make prediction 
- 
- *  there is no supervision here, algorithms have to work on their own to make predictions.
+* we use existing training dataset to correct the mapping function approximation. 
  
  
- ### Deep Learning:
+### Unsupervised ML algorithms:
  
- * **Traditional** ml based systems will rely on experts to decide what features to pay attention to. For example you will see in the linear regression problem, we have feed random value of A and b in equation: y = Ax + b, and get the best/optimized value of A,b so that the line is closest to all the datapoints
+* Here we have input variable x but no output variable y.
  
- * **Representation** based ml system figure out by themselves what features to pay attention to.
+* The goal of the algo is the find the model or pattern within the data to learn more about data and make prediction 
+ 
+*  there is no supervision here, algorithms have to work on their own to make predictions.
+ 
+ 
+### Deep Learning:
+ 
+* **Traditional** ml based systems will rely on experts to decide what features to pay attention to. For example you will see in the linear regression problem, we have feed random value of A and b in equation: y = Ax + b, and get the best/optimized value of A,b so that the line is closest to all the datapoints
+ 
+* **Representation** based ml system figure out by themselves what features to pay attention to.
  In the linear regression scenario the Representation system will able to pickup from a random value and optimized by itself to get the optimized value of A, b. 
  
  
- * **Deep Learning** systems are one type of representation systems
+* **Deep Learning** systems are one type of representation systems
  
- ### Deep Learning and Neural Networks:
+### Deep Learning and Neural Networks:
  
- * **Deep learning** : Algorithms which learns what feature matters
+* **Deep learning** : Algorithms which learns what feature matters
  
- * **Neural networks**:  Neural Networks are the most common class of deep learning algorithms
+* **Neural networks**:  Neural Networks are the most common class of deep learning algorithms
  
- * **Neurons**: Simple building blocks that actually learn by themselves
+* **Neurons**: Simple building blocks that actually learn by themselves
  
- * **TensorFlow**: TensorFLow is an open source software library for numerical computations using Data
+* **TensorFlow**: TensorFLow is an open source software library for numerical computations using Data
  flow graphs.
  
  
- ```
+```
  import tensorflow as tf
  
- ```
+```
  
  
- #### Points to remember
+#### Points to remember
 
 * In tesorflow every problem in the world can be described in terms of a directly acyclic graph
 * First we build a graph in tensorflow, so that the tensorflow have the knowledge of the whole graph and an understanding which parts of the graph are independent and can be run parallely in a distributed scenario(In different GPUs and CPUs)
@@ -99,6 +99,7 @@ sqrt = tf.sqrt(d, name = 'square_root_of_d')
 
 #Now lets define the final node.
 final_node = tf.add_n([square,power,sqrt], name = 'final_node')
+
 ```
  
  
@@ -123,11 +124,14 @@ print ("final result of all the nodes computation is:", sess.run(final_node))
 writer = tf.summary.FileWriter('/tmp/m2_example',sess.graph)
 writer.close
 sess.close()
+
 ```
 
 #### Tensor: What it is?
+
 * A tensor is the basic unit in the tensorflow, all the input that we feed into the graph are called tensors.
 * A tensor is of primitive type shaped into an array of any dimensions.
+
 ##### Properties of a tensor:
   * Rank: the number of dimensions in a tensor. Scaler(like 2,"a") have 0D tensor, [1,2,3] is 1-D tensor(basically number of square breacket pairs is the dimensionality of  a tensor)
   * Shape: It the number of elements in a tensor.e.g: [1,2]--> shape is [2]. [[1,2],[3,4]]--> shape si [2,2]
@@ -169,7 +173,9 @@ sess.run(tf.shape(zeroD))
 ```
 
 ## Linear Regression
+
 ### Points to Remember
+
 * Linear Regression is the classic example of supervised learning.
 * Linear Regression can be represented by y = Ax + b
 * In Ml it is more about finding the best fit line, ie the line which is closest to all the points on the dataset.
@@ -451,6 +457,8 @@ with tf.Session() as sess:
 ! wget http://files.all-free-download.com//downloadfiles/wallpapers/2560_1600/at_the_beach_wallpaper_beaches_nature_1247.jpg
 ! wget https://wallpaper-house.com/data/out/1/wallpaper2you_12642.jpg
 ```
+
+* Now that we have downloaded the images, lets write the code for transpose
 
 ```
 import tensorflow as tf
@@ -746,6 +754,7 @@ with tf.Session() as sess:
     print("Accuracy:", accuracy)
 
 ```
+
 
 Hope you have enjoyed My notes.
 
