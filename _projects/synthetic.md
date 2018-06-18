@@ -9,7 +9,9 @@ desc: "A python utility to generate synthetic data using Numpy"
 ---
 
 **Technologies**: python,gaussian stats model
+
 **RepoLink**: https://github.com/Gaurav-Pande/synthetic-data-generation.git
+
 **Referencedlink**: https://github.com/SheffieldML/GPy.git
 
 
