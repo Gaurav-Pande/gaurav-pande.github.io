@@ -86,19 +86,19 @@ Or you can just swipe through to grasp the summary.
 #### Define constants or compute nodes first
 
 ```
-# These are the inputs that will be feeded to compute nodes
-a = tf.constant(6.5, name = 'constant_a')
-b = tf.constant(3.4, name = 'constant_b')
-c = tf.constant(3.0, name = 'constant_c')
-d = tf.constant(100.2, name = 'constant_d')
+  # These are the inputs that will be feeded to compute nodes
+  a = tf.constant(6.5, name = 'constant_a')
+  b = tf.constant(3.4, name = 'constant_b')
+  c = tf.constant(3.0, name = 'constant_c')
+  d = tf.constant(100.2, name = 'constant_d')
 
-# Now lets define some compute nodes
-square = tf.square(a, name = 'square_of_a')
-power = tf.pow(b,c, name = 'power_of_b_to_c')
-sqrt = tf.sqrt(d, name = 'square_root_of_d')
+  # Now lets define some compute nodes
+  square = tf.square(a, name = 'square_of_a')
+  power = tf.pow(b,c, name = 'power_of_b_to_c')
+  sqrt = tf.sqrt(d, name = 'square_root_of_d')
 
-#Now lets define the final node.
-final_node = tf.add_n([square,power,sqrt], name = 'final_node')
+  #Now lets define the final node.
+  final_node = tf.add_n([square,power,sqrt], name = 'final_node')
 
 ```
  
@@ -106,24 +106,26 @@ final_node = tf.add_n([square,power,sqrt], name = 'final_node')
 #### Now we initialize the session
 
 ```
-sess = tf.Session()
+  sess = tf.Session()
+
 ```
  
 #### Now we can execute the nodes in the graph
 
 ```
-print ("Square of a is:",sess.run(square))
-print ("b to the power c is :",sess.run(power))
-print ("square root of d is:",sess.run(sqrt))
-print ("final result of all the nodes computation is:", sess.run(final_node))
+  print ("Square of a is:",sess.run(square))
+  print ("b to the power c is :",sess.run(power))
+  print ("square root of d is:",sess.run(sqrt))
+  print ("final result of all the nodes computation is:", sess.run(final_node))
+
 ```
 
 #### Now write the summary to read the graph by tensorboard.
 
 ```
-writer = tf.summary.FileWriter('/tmp/m2_example',sess.graph)
-writer.close
-sess.close()
+  writer = tf.summary.FileWriter('/tmp/m2_example',sess.graph)
+  writer.close
+  sess.close()
 
 ```
 
@@ -140,23 +142,23 @@ sess.close()
 ## Tensor Math
 
 ```
-# import tensorflow
-import tensorflow as tf
-# Define tensors
-x = tf.constant([100,200,300], name = 'tensor_x')
-y = tf.constant([1,2,3],name = 'tensor_y')
-# Define computation nodes
-sum_x = tf.reduce_sum(x,name='sum_x')
-prod_y = tf.reduce_prod(y,name = 'prod_y')
-final_div =  tf.div(sum_x,prod_y, name='final_div')
+  # import tensorflow
+  import tensorflow as tf
+  # Define tensors
+  x = tf.constant([100,200,300], name = 'tensor_x')
+  y = tf.constant([1,2,3],name = 'tensor_y')
+  # Define computation nodes
+  sum_x = tf.reduce_sum(x,name='sum_x')
+  prod_y = tf.reduce_prod(y,name = 'prod_y')
+  final_div =  tf.div(sum_x,prod_y, name='final_div')
 
-# we can define the tensors on the fly as well
-final_mean = tf.reduce_mean([sum_x,prod_y],name='final_mean')
-# inititalize session
-sess = tf.Session()
-# execute the graph
-print ("x",sess.run(sum_x))
-print ('final_mean',sess.run(final_mean))
+  # we can define the tensors on the fly as well
+  final_mean = tf.reduce_mean([sum_x,prod_y],name='final_mean')
+  # inititalize session
+  sess = tf.Session()
+  # execute the graph
+  print ("x",sess.run(sum_x))
+  print ('final_mean',sess.run(final_mean))
 
 ```
 
@@ -165,11 +167,12 @@ print ('final_mean',sess.run(final_mean))
 * python accepts tensors and numpy arrays exactly the same. in fact tf.int32 == np.int32
 
 ```
-import numpy as np
-zeroD = np.array(30, dtype=np.int32)
-sess = tf.Session()
-sess.run(tf.rank(zeroD))
-sess.run(tf.shape(zeroD))
+  import numpy as np
+  zeroD = np.array(30, dtype=np.int32)
+  sess = tf.Session()
+  sess.run(tf.rank(zeroD))
+  sess.run(tf.shape(zeroD))
+  
 ```
 
 ## Linear Regression
@@ -195,23 +198,23 @@ of length of those vertical lines.
 * It holds the value of the tensors, whose value will be available only at runtime.
 
 ```
-import tensorflow as tf
-# Defining a placeholder
-x = tf.placeholder(tf.int32, shape = [3], name = 'x')
-y = tf.placeholder(tf.int32, shape = [3], name = 'y')
-# Define Nodes
-sum_x = tf.reduce_sum(x, name='sum_x')
-prod_y = tf.reduce_prod(y, name='prod_y')
-final_div = tf.div(sum_x,prod_y, name='final_div')
-final_mean = tf.reduce_mean([sum_x,prod_y],name='final_mean')
-#Initiate a session
-sess = tf.Session()
-# Now compute the nodes
-# Notice now how we are feeding the input via feed dictionary method in placeholder
-print("sum of values of x", sess.run(sum_x, feed_dict = {x : [100,2,3]}))
-print("prod of values of y", sess.run(prod_y, feed_dict = {y: [1,2,3]}))
-print("final dic result:", sess.run(final_mean, feed_dict = {x:[2,3,4], y:[5,6,7]}))
-sess.close()
+  import tensorflow as tf
+  # Defining a placeholder
+  x = tf.placeholder(tf.int32, shape = [3], name = 'x')
+  y = tf.placeholder(tf.int32, shape = [3], name = 'y')
+  # Define Nodes
+  sum_x = tf.reduce_sum(x, name='sum_x')
+  prod_y = tf.reduce_prod(y, name='prod_y')
+  final_div = tf.div(sum_x,prod_y, name='final_div')
+  final_mean = tf.reduce_mean([sum_x,prod_y],name='final_mean')
+  #Initiate a session
+  sess = tf.Session()
+  # Now compute the nodes
+  # Notice now how we are feeding the input via feed dictionary method in placeholder
+  print("sum of values of x", sess.run(sum_x, feed_dict = {x : [100,2,3]}))
+  print("prod of values of y", sess.run(prod_y, feed_dict = {y: [1,2,3]}))
+  print("final dic result:", sess.run(final_mean, feed_dict = {x:[2,3,4], y:[5,6,7]}))
+  sess.close()
   
 ```
 
@@ -220,26 +223,26 @@ sess.close()
 * we feed the values of the placeholder using feed_dict inplace parameter
 
 ```
-import tensorflow as tf
+  import tensorflow as tf
 
-# y = Wx + b
+  # y = Wx + b
 
-W = tf.constant([100,200],name='constant_W')
+  W = tf.constant([100,200],name='constant_W')
 
-# define a place holder for x and b, note that placeholder can store tensors of
-# any shape
+  # define a place holder for x and b, note that placeholder can store tensors of
+  # any shape
 
-x = tf.placeholder(tf.int32, name='x')
-b = tf.placeholder(tf.int32, name='b')
+  x = tf.placeholder(tf.int32, name='x')
+  b = tf.placeholder(tf.int32, name='b')
 
-Wx = tf.multiply(W,x, name='Wx')
+  Wx = tf.multiply(W,x, name='Wx')
 
-y = tf.add(Wx, b, name='y')
+  y = tf.add(Wx, b, name='y')
 
-# rather than initializing session and closing everytime, we will use the loop
-#
-with tf.Session() as sess:
-  print ("Results are as:", sess.run(fetches=y, feed_dict = {Wx : [1,2], b : [1,2]}))
+  # rather than initializing session and closing everytime, we will use the loop
+  #
+  with tf.Session() as sess:
+    print ("Results are as:", sess.run(fetches=y, feed_dict = {Wx : [1,2], b : [1,2]}))
 
 ```
 
@@ -253,38 +256,38 @@ with tf.Session() as sess:
   * variable: constantly recomputed as the graph is recomputed.
   
 ```
-import tensorflow as tf
+  import tensorflow as tf
 
-# y = Wx + b
+  # y = Wx + b
 
-W = tf.Variable([1.0, 2.0], tf.float32, name='var_W')
+  W = tf.Variable([1.0, 2.0], tf.float32, name='var_W')
 
-# define a place holder for x and b, note that placeholder can store tensors of
-# any shape
+  # define a place holder for x and b, note that placeholder can store tensors of
+  # any shape
 
-x = tf.placeholder(tf.float32, name='x')
-b = tf.Variable([1.0,2.0], tf.float32, name='b')
+  x = tf.placeholder(tf.float32, name='x')
+  b = tf.Variable([1.0,2.0], tf.float32, name='b')
 
-y = W*x + b
+  y = W*x + b
 
-## remember to initialize the variable, also note that is also a computation node
-init = tf.global_variables_initializer()
+  ## remember to initialize the variable, also note that is also a computation node
+  init = tf.global_variables_initializer()
 
-# rather than initializing session and closing everytime, we will use the loop
-with tf.Session() as sess:
-  sess.run(init)
-  print ("Results are as:", sess.run(fetches=y, feed_dict = {x: [5.0, 6.0]}))
-  
-  
-  
-s = W*x
+  # rather than initializing session and closing everytime, we will use the loop
+  with tf.Session() as sess:
+    sess.run(init)
+    print ("Results are as:", sess.run(fetches=y, feed_dict = {x: [5.0, 6.0]}))
 
-# Here i am only initializing the variables i need 
-init = tf.variables_initializer([W])
 
-with tf.Session() as sess:
-  sess.run(init)
-  print ("Results are as:", sess.run(fetches=s, feed_dict = {x: [5.0, 6.0]}))
+
+  s = W*x
+
+  # Here i am only initializing the variables i need 
+  init = tf.variables_initializer([W])
+
+  with tf.Session() as sess:
+    sess.run(init)
+    print ("Results are as:", sess.run(fetches=s, feed_dict = {x: [5.0, 6.0]}))
 
 ```
 
@@ -294,49 +297,49 @@ with tf.Session() as sess:
 * We can instantiate our own graph and perform all actions there as well.
 
 ```
-import tensorflow as tf
+  import tensorflow as tf
 
-g1 = tf.Graph()
+  g1 = tf.Graph()
 
-with g1.as_default():
-	with tf.Session() as sess:
-		# y = Ax + b
-		A = tf.constant([5, 7], tf.int32, name='A')
+  with g1.as_default():
+    with tf.Session() as sess:
+      # y = Ax + b
+      A = tf.constant([5, 7], tf.int32, name='A')
 
-		x = tf.placeholder(tf.int32, name='x')
-		b = tf.constant([3, 4], tf.int32, name='b')
+      x = tf.placeholder(tf.int32, name='x')
+      b = tf.constant([3, 4], tf.int32, name='b')
 
-		y = A * x + b
+      y = A * x + b
 
-		print (sess.run(y, feed_dict={x: [10, 100]}))
+      print (sess.run(y, feed_dict={x: [10, 100]}))
 
-		assert y.graph is g1
+      assert y.graph is g1
 
-g2 = tf.Graph()
-with g2.as_default():
-	with tf.Session() as sess:
-		# y = A^x
-		A = tf.constant([5, 7], tf.int32, name='A')
+  g2 = tf.Graph()
+  with g2.as_default():
+    with tf.Session() as sess:
+      # y = A^x
+      A = tf.constant([5, 7], tf.int32, name='A')
 
-		x = tf.placeholder(tf.int32, name='x')
+      x = tf.placeholder(tf.int32, name='x')
 
-		y = tf.pow(A, x, name="y")
+      y = tf.pow(A, x, name="y")
 
-		print (sess.run(y, feed_dict={x: [3, 5]}))
+      print (sess.run(y, feed_dict={x: [3, 5]}))
 
-		assert y.graph is g2
+      assert y.graph is g2
 
-default_graph = tf.get_default_graph()
-with tf.Session() as sess:
-	# y = A + x
-	A = tf.constant([5, 7], tf.int32, name='A')
+  default_graph = tf.get_default_graph()
+  with tf.Session() as sess:
+    # y = A + x
+    A = tf.constant([5, 7], tf.int32, name='A')
 
-	x = tf.placeholder(tf.int32, name='x')
+    x = tf.placeholder(tf.int32, name='x')
 
-	y = A + x
-	print (sess.run(y, feed_dict={x: [3, 5]}))
+    y = A + x
+    print (sess.run(y, feed_dict={x: [3, 5]}))
 
-	assert y.graph is default_graph
+    assert y.graph is default_graph
 
 
 ```
@@ -350,79 +353,79 @@ with tf.Session() as sess:
 * you can also say that these are cetain blocks of code that you want to debug separatly using tensorboard
 
 ```
-import tensorflow as tf
+  import tensorflow as tf
 
-A = tf.constant([4], tf.int32, name='A')
-B = tf.constant([5], tf.int32, name='B')
-C = tf.constant([6], tf.int32, name='C')
+  A = tf.constant([4], tf.int32, name='A')
+  B = tf.constant([5], tf.int32, name='B')
+  C = tf.constant([6], tf.int32, name='C')
 
-x = tf.placeholder(tf.int32, name='x')
+  x = tf.placeholder(tf.int32, name='x')
 
-# y = Ax^2 + Bx + C
-with tf.name_scope("Equation_1"):
-	Ax2 = tf.multiply(A, tf.pow(x, 2), name="Ax2")
-	Bx = tf.multiply(B, x, name="Bx")
-	y1 = tf.add_n([Ax2, Bx, C], name="calc_1")
+  # y = Ax^2 + Bx + C
+  with tf.name_scope("Equation_1"):
+    Ax2 = tf.multiply(A, tf.pow(x, 2), name="Ax2")
+    Bx = tf.multiply(B, x, name="Bx")
+    y1 = tf.add_n([Ax2, Bx, C], name="calc_1")
 
-# y = Ax^2 + Bx^2
-with tf.name_scope("Equation_2"):
-	Ax2 = tf.multiply(A, tf.pow(x, 2), name="Ax2")
-	Bx2 = tf.multiply(B, tf.pow(x, 2), name="Bx2")
-	y2 = tf.add_n([Ax2, Bx2], name="calc_1")
+  # y = Ax^2 + Bx^2
+  with tf.name_scope("Equation_2"):
+    Ax2 = tf.multiply(A, tf.pow(x, 2), name="Ax2")
+    Bx2 = tf.multiply(B, tf.pow(x, 2), name="Bx2")
+    y2 = tf.add_n([Ax2, Bx2], name="calc_1")
 
-with tf.name_scope("Final_Sum"):
-	y = y1 + y2
+  with tf.name_scope("Final_Sum"):
+    y = y1 + y2
 
-with tf.Session() as sess:
-	print (sess.run(y, feed_dict={x: [10]}))
+  with tf.Session() as sess:
+    print (sess.run(y, feed_dict={x: [10]}))
 
-	writer = tf.summary.FileWriter('./tensorboard_file', sess.graph)
-	writer.close()
+    writer = tf.summary.FileWriter('./tensorboard_file', sess.graph)
+    writer.close()
 
 ```
 
 ### Write a Basic Linear Regression model
 
 ```
-import tensorflow as tf
+  import tensorflow as tf
 
-# Model parameters
-W = tf.Variable([0.3],dtype = tf.float32, name='var_W')
-b = tf.Variable([0.1],dtype = tf.float32, name='var_b')
+  # Model parameters
+  W = tf.Variable([0.3],dtype = tf.float32, name='var_W')
+  b = tf.Variable([0.1],dtype = tf.float32, name='var_b')
 
-# Model input and ouput
-x = tf.placeholder(tf.float32)
-linear_model = W*x + b
+  # Model input and ouput
+  x = tf.placeholder(tf.float32)
+  linear_model = W*x + b
 
-y = tf.placeholder(tf.float32)
+  y = tf.placeholder(tf.float32)
 
-# define your loss function
-loss = tf.reduce_sum(tf.square(linear_model - y))
+  # define your loss function
+  loss = tf.reduce_sum(tf.square(linear_model - y))
 
-# Define an optimizer which will try to optimize the algorithm
-optimizer = tf.train.GradientDescentOptimizer(0.01)
+  # Define an optimizer which will try to optimize the algorithm
+  optimizer = tf.train.GradientDescentOptimizer(0.01)
 
-train = optimizer.minimize(loss)
+  train = optimizer.minimize(loss)
 
-# train  data
+  # train  data
 
-x_train = [1,2,3,4]
-y_train = [0,-1,-2,-3]
+  x_train = [1,2,3,4]
+  y_train = [0,-1,-2,-3]
 
 
-init = tf.global_variables_initializer()
+  init = tf.global_variables_initializer()
 
-with tf.Session() as sess:
-  sess.run(init)
-  for i in range(1000):
-    sess.run(train, {x:x_train, y:y_train})
+  with tf.Session() as sess:
+    sess.run(init)
+    for i in range(1000):
+      sess.run(train, {x:x_train, y:y_train})
 
-    # Now evaluate the training accuracy
-    curr_W, curr_b, curr_loss = sess.run([W,b,loss],{x:x_train, y:y_train})
-    
-  print("w:",curr_W)
-  print("b:",curr_b)
-  print("loss:",curr_loss)
+      # Now evaluate the training accuracy
+      curr_W, curr_b, curr_loss = sess.run([W,b,loss],{x:x_train, y:y_train})
+
+    print("w:",curr_W)
+    print("b:",curr_b)
+    print("loss:",curr_loss)
     
 ```
 
@@ -451,47 +454,48 @@ with tf.Session() as sess:
 * In this exercise we will read an image using tensorflow and then transpose it using tensorflow
 
 ```
-# Lets download an image to play with
-! wget https://upload.wikimedia.org/wikipedia/commons/5/54/TaraxacumOfficinaleSeed.JPG
-! wget https://www.planwallpaper.com/static/images/880665-road-wallpapers.jpg
-! wget http://files.all-free-download.com//downloadfiles/wallpapers/2560_1600/at_the_beach_wallpaper_beaches_nature_1247.jpg
-! wget https://wallpaper-house.com/data/out/1/wallpaper2you_12642.jpg
+  # Lets download an image to play with
+  ! wget https://upload.wikimedia.org/wikipedia/commons/5/54/TaraxacumOfficinaleSeed.JPG
+  ! wget https://www.planwallpaper.com/static/images/880665-road-wallpapers.jpg
+  ! wget http://files.all-free-download.com//downloadfiles/wallpapers/2560_1600/at_the_beach_wallpaper_beaches_nature_1247.jpg
+  ! wget https://wallpaper-house.com/data/out/1/wallpaper2you_12642.jpg
+  
 ```
 
 * Now that we have downloaded the images, lets write the code for transpose
 
 ```
-import tensorflow as tf
-import matplotlib.image as mp_img
-import matplotlib.pyplot as plot
-import os
+  import tensorflow as tf
+  import matplotlib.image as mp_img
+  import matplotlib.pyplot as plot
+  import os
 
 
-filename = "./TaraxacumOfficinaleSeed.JPG"
+  filename = "./TaraxacumOfficinaleSeed.JPG"
 
-image = mp_img.imread(filename)
+  image = mp_img.imread(filename)
 
-print ("image shape is:", image.shape)
-print ("image array:", image)
+  print ("image shape is:", image.shape)
+  print ("image array:", image)
 
-plot.imshow(image)
-plot.show()
-
-x = tf.Variable(image, name='image')
-
-init = tf.global_variables_initializer()
-
-with tf.Session() as sess:
-  sess.run(init)
-  # Note that here in perm [1,0,2] we are swapping 0 and 1 indices or x with y
-  transpose = tf.transpose(x, perm = [1,0,2])
-  
-  result = sess.run(transpose)
-  
-  print ("transposed image shape:", result.shape)
-  
-  plot.imshow(result)
+  plot.imshow(image)
   plot.show()
+
+  x = tf.Variable(image, name='image')
+
+  init = tf.global_variables_initializer()
+
+  with tf.Session() as sess:
+    sess.run(init)
+    # Note that here in perm [1,0,2] we are swapping 0 and 1 indices or x with y
+    transpose = tf.transpose(x, perm = [1,0,2])
+
+    result = sess.run(transpose)
+
+    print ("transposed image shape:", result.shape)
+
+    plot.imshow(result)
+    plot.show()
   
 ```
 
@@ -500,65 +504,67 @@ with tf.Session() as sess:
 #### Without tf.stack() method
 
 ```
-#@title
-import tensorflow as tf
 
-from PIL import Image
+  #@title
+  import tensorflow as tf
 
-original_image_list = ["./880665-road-wallpapers.jpg", 
-                       "./TaraxacumOfficinaleSeed.JPG",
-                       "./wallpaper2you_12642.jpg",
-                       "./at_the_beach_wallpaper_beaches_nature_1247.jpg"]
+  from PIL import Image
 
-# Make a queue of file names including all the images specified.
-filename_queue = tf.train.string_input_producer(original_image_list)
+  original_image_list = ["./880665-road-wallpapers.jpg", 
+                         "./TaraxacumOfficinaleSeed.JPG",
+                         "./wallpaper2you_12642.jpg",
+                         "./at_the_beach_wallpaper_beaches_nature_1247.jpg"]
 
-# Read an entire image file.
-image_reader = tf.WholeFileReader()
+  # Make a queue of file names including all the images specified.
+  filename_queue = tf.train.string_input_producer(original_image_list)
 
-with tf.Session() as sess:
-    # Coordinate the loading of image files. It manages the thread in a queue
-    coord = tf.train.Coordinator()
-    threads = tf.train.start_queue_runners(sess=sess, coord=coord)
+  # Read an entire image file.
+  image_reader = tf.WholeFileReader()
 
-    image_list = [];
-    for i in range(len(original_image_list)):
-        # Read a whole file from the queue, the first returned value in the tuple is the
-        # filename which we are ignoring.
-        _, image_file = image_reader.read(filename_queue)
+  with tf.Session() as sess:
+      # Coordinate the loading of image files. It manages the thread in a queue
+      coord = tf.train.Coordinator()
+      threads = tf.train.start_queue_runners(sess=sess, coord=coord)
 
-        # Decode the image as a JPEG file, this will turn it into a Tensor which we can
-        # then use in training.
-        image = tf.image.decode_jpeg(image_file)
+      image_list = [];
+      for i in range(len(original_image_list)):
+          # Read a whole file from the queue, the first returned value in the tuple is the
+          # filename which we are ignoring.
+          _, image_file = image_reader.read(filename_queue)
 
-        # Get a tensor of resized images.
-        image = tf.image.resize_images(image, [224, 224])
-        image.set_shape((224, 224, 3))
+          # Decode the image as a JPEG file, this will turn it into a Tensor which we can
+          # then use in training.
+          image = tf.image.decode_jpeg(image_file)
 
-        # Get an image tensor and print its value.
-        image_array = sess.run(image)
-        print (image_array.shape)
+          # Get a tensor of resized images.
+          image = tf.image.resize_images(image, [224, 224])
+          image.set_shape((224, 224, 3))
 
-        Image.fromarray(image_array.astype('uint8'), 'RGB').show()
+          # Get an image tensor and print its value.
+          image_array = sess.run(image)
+          print (image_array.shape)
 
-        # The expand_dims adds a new dimension
-        image_list.append(tf.expand_dims(image_array, 0))
+          Image.fromarray(image_array.astype('uint8'), 'RGB').show()
 
-    # Finish off the filename queue coordinator.
-    coord.request_stop()
-    coord.join(threads)
+          # The expand_dims adds a new dimension
+          image_list.append(tf.expand_dims(image_array, 0))
 
-    index = 0
+      # Finish off the filename queue coordinator.
+      coord.request_stop()
+      coord.join(threads)
 
-    # Write image summary
-    summary_writer = tf.summary.FileWriter('./m4_example2', graph=sess.graph)
+      index = 0
 
-    for image_tensor in image_list:
-        summary_str = sess.run(tf.summary.image("image-" + str(index), image_tensor))
-        summary_writer.add_summary(summary_str)
-        index += 1
+      # Write image summary
+      summary_writer = tf.summary.FileWriter('./m4_example2', graph=sess.graph)
 
-    summary_writer.close()
+      for image_tensor in image_list:
+          summary_str = sess.run(tf.summary.image("image-" + str(index), image_tensor))
+          summary_writer.add_summary(summary_str)
+          index += 1
+
+      summary_writer.close()
+      
 ```
 
 * Visualize Tensorboard here : https://colab.research.google.com/drive/1ndNCQmID2x7Gk_gNGer2k4yz4EJ1ZuG0
@@ -573,70 +579,71 @@ with tf.Session() as sess:
 * we will run the same above code using tf.stack() method
 
 ```
-#@title
-import tensorflow as tf
+  #@title
+  import tensorflow as tf
 
-from PIL import Image
+  from PIL import Image
 
-original_image_list = ["./880665-road-wallpapers.jpg", 
-                       "./TaraxacumOfficinaleSeed.JPG",
-                       "./wallpaper2you_12642.jpg",
-                       "./at_the_beach_wallpaper_beaches_nature_1247.jpg"]
+  original_image_list = ["./880665-road-wallpapers.jpg", 
+                         "./TaraxacumOfficinaleSeed.JPG",
+                         "./wallpaper2you_12642.jpg",
+                         "./at_the_beach_wallpaper_beaches_nature_1247.jpg"]
 
-# Make a queue of file names including all the images specified.
-filename_queue = tf.train.string_input_producer(original_image_list)
+  # Make a queue of file names including all the images specified.
+  filename_queue = tf.train.string_input_producer(original_image_list)
 
-# Read an entire image file.
-image_reader = tf.WholeFileReader()
+  # Read an entire image file.
+  image_reader = tf.WholeFileReader()
 
-with tf.Session() as sess:
-    # Coordinate the loading of image files. It manages the thread in a queue
-    coord = tf.train.Coordinator()
-    threads = tf.train.start_queue_runners(sess=sess, coord=coord)
+  with tf.Session() as sess:
+      # Coordinate the loading of image files. It manages the thread in a queue
+      coord = tf.train.Coordinator()
+      threads = tf.train.start_queue_runners(sess=sess, coord=coord)
 
-    image_list = [];
-    for i in range(len(original_image_list)):
-        # Read a whole file from the queue, the first returned value in the tuple is the
-        # filename which we are ignoring.
-        _, image_file = image_reader.read(filename_queue)
+      image_list = [];
+      for i in range(len(original_image_list)):
+          # Read a whole file from the queue, the first returned value in the tuple is the
+          # filename which we are ignoring.
+          _, image_file = image_reader.read(filename_queue)
 
-        # Decode the image as a JPEG file, this will turn it into a Tensor which we can
-        # then use in training.
-        image = tf.image.decode_jpeg(image_file)
+          # Decode the image as a JPEG file, this will turn it into a Tensor which we can
+          # then use in training.
+          image = tf.image.decode_jpeg(image_file)
 
-        # Get a tensor of resized images.
-        image = tf.image.resize_images(image, [224, 224])
-        image.set_shape((224, 224, 3))
+          # Get a tensor of resized images.
+          image = tf.image.resize_images(image, [224, 224])
+          image.set_shape((224, 224, 3))
 
-        # Get an image tensor and print its value.
-        image_array = sess.run(image)
-        print (image_array.shape)
+          # Get an image tensor and print its value.
+          image_array = sess.run(image)
+          print (image_array.shape)
 
-        # Convert a numpy array of kind(224,224,3) to a tensor of shape (224,224,3)
-        image_tensor = tf.stack(image_array)
+          # Convert a numpy array of kind(224,224,3) to a tensor of shape (224,224,3)
+          image_tensor = tf.stack(image_array)
 
-        # The list will now simply holds the image tensor
-        image_list.append(image_tensor)
+          # The list will now simply holds the image tensor
+          image_list.append(image_tensor)
 
-    # Finish off the filename queue coordinator.
-    coord.request_stop()
-    coord.join(threads)
+      # Finish off the filename queue coordinator.
+      coord.request_stop()
+      coord.join(threads)
 
-    # now lets convert all tensors to a  single tensor of 4-d using stack() command
-    # 4 images can be accessed with 4-D tensor as (0,224,224,3), (1,224,224,3),etv
-    
-    image_tensor = tf.stack(image_list)
-    print(image_tensor)
-    
-    
-    summary_writer = tf.summary.FileWriter('./example_4', graph = sess.graph)
-    
-    # write all images in a one go
-    
-    summary_str = sess.run(tf.summary.image("images",image_tensor,max_outputs=4))
-    summary_writer.add_summary(summary_str)   
-    
-    summary_writer.close()
+      # now lets convert all tensors to a  single tensor of 4-d using stack() command
+      # 4 images can be accessed with 4-D tensor as (0,224,224,3), (1,224,224,3),etv
+
+      image_tensor = tf.stack(image_list)
+      print(image_tensor)
+
+
+      summary_writer = tf.summary.FileWriter('./example_4', graph = sess.graph)
+
+      # write all images in a one go
+
+      summary_str = sess.run(tf.summary.image("images",image_tensor,max_outputs=4))
+      summary_writer.add_summary(summary_str)   
+
+      summary_writer.close()
+      
 ```
 
 ## Using K- Nearest Neighbors for digit recognition
@@ -674,7 +681,7 @@ with tf.Session() as sess:
 
 ![Image](https://github.com/Gaurav-Pande/MLCC/blob/master/tensorflow_basics/assets/2.png)
 
- ##### Distance Measures:
+##### Distance Measures:
  
  * euclidean distance. it is like a displacement, i.e join directly two points and find the distance.
  
@@ -696,62 +703,62 @@ with tf.Session() as sess:
 
 
 ```
-import numpy as np
-import tensorflow as tf
+  import numpy as np
+  import tensorflow as tf
 
-# Import MNIST data
-from tensorflow.examples.tutorials.mnist import input_data
+  # Import MNIST data
+  from tensorflow.examples.tutorials.mnist import input_data
 
-# Store the MNIST data in mnist_data directory
-# remember here the one_hot=True means that label will be represented a vector
-# of 10 elements, so for example, 4 will be represented as
-# [0,0,0,0,1,0,0,0,0,0] (note that 4 is at the index 4 of the list)
+  # Store the MNIST data in mnist_data directory
+  # remember here the one_hot=True means that label will be represented a vector
+  # of 10 elements, so for example, 4 will be represented as
+  # [0,0,0,0,1,0,0,0,0,0] (note that 4 is at the index 4 of the list)
 
-mnist = input_data.read_data_sets("mnist_data/", one_hot=True)
+  mnist = input_data.read_data_sets("mnist_data/", one_hot=True)
 
-training_digits, training_labels = mnist.train.next_batch(5000)
-test_digits, test_labels = mnist.test.next_batch(200)
+  training_digits, training_labels = mnist.train.next_batch(5000)
+  test_digits, test_labels = mnist.test.next_batch(200)
 
-# we have no idea how many images we are going to pass in,so first param in the 
-# placeholder [None, 784] indicates the index of the image, and the second 
-# parameter in 784 indicates vector of 784 values, because we represent the images
-# as a vector.
-training_digits_pl = tf.placeholder("float", [None, 784])
+  # we have no idea how many images we are going to pass in,so first param in the 
+  # placeholder [None, 784] indicates the index of the image, and the second 
+  # parameter in 784 indicates vector of 784 values, because we represent the images
+  # as a vector.
+  training_digits_pl = tf.placeholder("float", [None, 784])
 
-test_digit_pl = tf.placeholder("float", [784])
+  test_digit_pl = tf.placeholder("float", [784])
 
-# Nearest Neighbor calculation using L1 distance
-l1_distance = tf.abs(tf.add(training_digits_pl, tf.negative(test_digit_pl)))
+  # Nearest Neighbor calculation using L1 distance
+  l1_distance = tf.abs(tf.add(training_digits_pl, tf.negative(test_digit_pl)))
 
-distance = tf.reduce_sum(l1_distance, axis=1)
+  distance = tf.reduce_sum(l1_distance, axis=1)
 
-# Prediction: Get min distance index (Nearest neighbor)
-pred = tf.arg_min(distance, 0)
+  # Prediction: Get min distance index (Nearest neighbor)
+  pred = tf.arg_min(distance, 0)
 
-accuracy = 0.
+  accuracy = 0.
 
-# Initializing the variables
-init = tf.global_variables_initializer()
+  # Initializing the variables
+  init = tf.global_variables_initializer()
 
-with tf.Session() as sess:
-    sess.run(init)
+  with tf.Session() as sess:
+      sess.run(init)
 
-    # loop over test data
-    for i in range(len(test_digits)):
-        # Get nearest neighbor
-        nn_index = sess.run(pred, \
-        	feed_dict={training_digits_pl: training_digits, test_digit_pl: test_digits[i, :]})
+      # loop over test data
+      for i in range(len(test_digits)):
+          # Get nearest neighbor
+          nn_index = sess.run(pred, \
+            feed_dict={training_digits_pl: training_digits, test_digit_pl: test_digits[i, :]})
 
-        # Get nearest neighbor class label and compare it to its true label
-        print("Test", i, "Prediction:", np.argmax(training_labels[nn_index]), \
-            "True Label:", np.argmax(test_labels[i]))
+          # Get nearest neighbor class label and compare it to its true label
+          print("Test", i, "Prediction:", np.argmax(training_labels[nn_index]), \
+              "True Label:", np.argmax(test_labels[i]))
 
-        # Calculate accuracy
-        if np.argmax(training_labels[nn_index]) == np.argmax(test_labels[i]):
-            accuracy += 1./len(test_digits)
+          # Calculate accuracy
+          if np.argmax(training_labels[nn_index]) == np.argmax(test_labels[i]):
+              accuracy += 1./len(test_digits)
 
-    print("Done!")
-    print("Accuracy:", accuracy)
+      print("Done!")
+      print("Accuracy:", accuracy)
 
 ```
 
