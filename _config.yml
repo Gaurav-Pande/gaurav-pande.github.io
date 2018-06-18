@@ -18,7 +18,7 @@ description: >
 # root of your server.
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url:  "http://gauravpande.in"# the base hostname & protocol for your site
-cover: "/assets/background.jpg"
+cover: "/assets/coverpic.jpg"
 cover_height: 2000
 logo: "/assets/GP-icon.png"
 
