@@ -49,6 +49,21 @@ permalink: /projects/
 	 {% endif %}
   {% endfor %}
 <hr>
+
+<h2>Limbo</h2>
+  {% for album in site.projects %}
+	 {% if album.categories contains "mixed" %} 
+		<ul class="posts-list">
+    	<li>
+      	<strong>
+					<a href="{{ album.url | prepend: album.baseurl }}">{{ album.title }}</a> <!--<span class = "desc" style="font-weight:normal ; font-size:20pt"><em>{{album.desc}}</em></span>-->
+      	</strong>
+				<p class="desc" align="right"><em>- {{ album.desc }}</em></p>
+    	</li>
+		</ul>
+	 {% endif %}
+  {% endfor %}
+<hr>
   
 
 	
