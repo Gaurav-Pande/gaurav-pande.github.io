@@ -8,7 +8,7 @@ desc: "Understanding foundations of tensorflow and Image recognition"
 
 ---
 
-**Technologies**: python3,tensorflow,tensorboard,machine learning, Deep Learning
+**Technologies**: python3, tensorflow,tensorboard,machine learning, Deep Learning, KNN 
 
 **Repo Link**: [link](https://github.com/Gaurav-Pande/MLCC/tree/master/tensorflow_basics)
 
@@ -17,7 +17,6 @@ tensorflow basics before starting the google machine learning crash coarse. If y
 this page is not for you.
 You can directly run this project using google collab: [link](https://colab.research.google.com/drive/1plzYDCXRmW47nVRwZrlTcjap4-eY0APc)
 Or you can just swipe through to grasp the summary.
-
 
 ## Basics
 
