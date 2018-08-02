@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Contact Me
-permalink: /talk/
+layout: post
+title:  "Lets Talk"
+cover: "/assets/Metamorphosis.jpg"
 ---
 
 Looking Forward to answering your message.
