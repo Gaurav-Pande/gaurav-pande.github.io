@@ -6,11 +6,12 @@ date:
 permalink: /leetcode/
 categories: mixed
 desc: >-
- Problems that I solved for practising programming
+ Problems that I solved for to practice programming
 published: true
 ---
 
 ** Language ** : python
+** Repo Link** : [link](https://github.com/Gaurav-Pande/DataStructures/tree/master/leetcode)
 
 ---
 
