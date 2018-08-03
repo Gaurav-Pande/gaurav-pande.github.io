@@ -27,5 +27,6 @@ Looking Forward to answering your message.
     <input class="button submit" type="submit" value="Send">
     <br/>
 </form>
+  <br/>
 </div>
 
