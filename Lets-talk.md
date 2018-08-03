@@ -8,21 +8,93 @@ Looking Forward to answering your message.
 
 ---
 
-<form action="//formspree.io/email@domain.com" method="POST" >
-    <fieldset style="background-color:#A2E0FF">
-        <label for="name">Your name</label><br>
-        <input type="text" name="name" placeholder="Name" required>
-    </fieldset>
-    <fieldset style="background-color:#A2E0FF">
-        <label for="_replyto">Your email</label><br>
-        <input type="email" name="_replyto" placeholder="example@domain.com" required>
-    </fieldset>
-    <fieldset style="background-color:#A2E0FF">
-        <label for="message">Your message</label><br>
-        <textarea name="message" rows="5" placeholder="Message" required></textarea>
-    </fieldset>
-    <input class="hidden" type="text" name="_gotcha" style="display:none">
-    <input class="hidden" type="hidden" name="_subject" value="Message via http://domain.com">
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    <input class="button submit" type="submit" value="Send">
-</form>
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url("img_nature.jpg");
+
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Add styles to the form container */
+.container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<h2>Form on Hero Image</h2>
+<div class="bg-img">
+  <form action="/action_page.php">
+    <div class="container">
+      <h1>Login</h1>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn">Login</button>
+    </div>
+  </form>
+</div>
+
+<p>This example creates a form on a responsive image. Try to resize the browser window to see how it always will cover the whole width of the screen, and that it scales nicely on all screen sizes.</p>
+
+</body>
+</html>
+
