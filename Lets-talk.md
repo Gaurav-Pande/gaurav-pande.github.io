@@ -10,15 +10,15 @@ Looking Forward to answering your message.
 <div style="background-image:url('/assets/horizon.jpg');height:100%;width:100%;">
 <form action="//formspree.io/email@domain.com" method="POST" style="margin: 0 auto;width:70%"  >
     <fieldset style="width:90%;height=80%">
-        <label for="name">Your name</label><br>
+        <label for="name">Your name</label>
         <input type="text" name="name" placeholder="Name" required>
     </fieldset>
     <fieldset style="width:90%;height=80%">
-        <label for="_replyto">Your email</label><br>
+        <label for="_replyto">Your email</label>
         <input type="email" name="_replyto" placeholder="example@domain.com" required>
     </fieldset>
     <fieldset style="width:90%;height=80%">
-        <label for="message">Your message</label><br>
+        <label for="message">Your message</label>
         <textarea name="message" rows="5" placeholder="Message" width="80%" required></textarea>
     </fieldset>
     <input class="hidden" type="text" name="_gotcha" style="display:none">
