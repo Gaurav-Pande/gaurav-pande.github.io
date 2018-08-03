@@ -9,15 +9,15 @@ Looking Forward to answering your message.
 ---
 <div style="background-image:url('/assets/horizon.jpg');height:100%;width:100%;">
 <form action="//formspree.io/email@domain.com" method="POST" >
-    <fieldset>
+    <fieldset style="width:70%;height=80%">
         <label for="name">Your name</label><br>
         <input type="text" name="name" placeholder="Name" required>
     </fieldset>
-    <fieldset>
+    <fieldset style="width:70%;height=80%">
         <label for="_replyto">Your email</label><br>
         <input type="email" name="_replyto" placeholder="example@domain.com" required>
     </fieldset>
-    <fieldset>
+    <fieldset style="width:70%;height=80%">
         <label for="message">Your message</label><br>
         <textarea name="message" rows="5" placeholder="Message" required></textarea>
     </fieldset>
