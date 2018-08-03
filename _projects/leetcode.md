@@ -10,8 +10,9 @@ desc: >-
 published: true
 ---
 
-** Language ** : python
-** Repo Link** : [link](https://github.com/Gaurav-Pande/DataStructures/tree/master/leetcode)
+**Language** : python
+
+**Repo Link** : [link](https://github.com/Gaurav-Pande/DataStructures/tree/master/leetcode)
 
 ---
 
