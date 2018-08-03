@@ -6,7 +6,7 @@ date:
 permalink: /leetcode/
 categories: mixed
 desc: >-
- Problems that I solved for to practice programming
+ Problems that I solved to practice programming
 published: true
 ---
 
