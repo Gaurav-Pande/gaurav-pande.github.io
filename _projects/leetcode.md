@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Leetcode for humans
+title: Leetcode for Humans
 date:
   'Tue Dec 25 2016 14:13:59 GMT+0530 (IST)': null
 permalink: /leetcode/
