@@ -7,7 +7,7 @@ permalink: /talk/
 Looking Forward to answering your message.
 
 ---
-<div style="background-image:url('/assets/horizon.jpg');padding:5px;width:250px;height:400px;">
+<div style="background-image:url('/assets/horizon.jpg');min-height: 380px;background-position: center;background-size: cover;background-repeat: no-repeat;">
 <form action="//formspree.io/email@domain.com" method="POST" >
     <fieldset style="background-color:#A2E0FF">
         <label for="name">Your name</label><br>
