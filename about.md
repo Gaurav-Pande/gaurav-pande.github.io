@@ -11,7 +11,7 @@ permalink: /about/
 
 <div style="text-align:center"><span style="color:black; font-family:Georgia; font-size:1em;">
 
-Hi, I am Gaurav Pande and Thankyou for landing into my webspace :)
+Hi, I am Gaurav Pande and Thankyou for landing on my webspace :)
 
 I still vividly remember when I was exposed to the unseen world of technology for the first time in 7th standard, being selected for the project - “Mapping The Neighbourhood” which was launched by the Department of Science & Technology, Government Of India. The project aimed at pinning up geographical locations with the aid of palmtop computers and GPS assisting to sketch complex altimeters which in turn would help the government to formulate developmental projects of rural areas.My naive mind was magnificently captivated by this technological errand of almost two years.This propelled me to unveil the working of an indispensable set of events that taciturnly run behind the scenes. 
 
