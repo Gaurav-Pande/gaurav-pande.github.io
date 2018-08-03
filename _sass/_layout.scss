@@ -419,6 +419,18 @@ pre code.hljs {
     border-radius: 50%;
 	}
 
+	//background image for contact me form
+	.bg-img {
+    /* The image used */
+    background-image: url("../assets/horizon.jpg");
+
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 	
 	/*
 	*	Site Description/Signature (right)
