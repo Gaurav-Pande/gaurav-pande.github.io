@@ -8,7 +8,7 @@ Looking Forward to answering your message.
 
 ---
 <div style="background-image:url('/assets/horizon.jpg');height:100%;width:100%;">
-<form action="//formspree.io/email@domain.com" method="POST" >
+<form action="//formspree.io/email@domain.com" method="POST" style="margin: 0 auto;width:50%"  >
     <fieldset style="width:70%;height=80%">
         <label for="name">Your name</label><br>
         <input type="text" name="name" placeholder="Name" required>
@@ -19,7 +19,7 @@ Looking Forward to answering your message.
     </fieldset>
     <fieldset style="width:70%;height=80%">
         <label for="message">Your message</label><br>
-        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        <textarea name="message" rows="5" placeholder="Message" width="80%" required></textarea>
     </fieldset>
     <input class="hidden" type="text" name="_gotcha" style="display:none">
     <input class="hidden" type="hidden" name="_subject" value="Message via http://domain.com">
