@@ -20,7 +20,7 @@ I was perpetually fascinated by the miracles of science through mathematical con
 
 I am a Software Engineer in Cisco, Bangalore India. Currently I am working on automation and machine learning based project in cisco to solve complex problems from automated network congestion mitigation to self healing networks. Alongside I am also doing my Masters of Science in Computer science(specialization-Machine Learning) from Georgia Institute of Technology, Atlanta. 
 
-You can view my complete resume at [view my resume][resume] or connect with me on [LinkedIn][linkedin].
+You can view my complete resume at [view my resume][resume] or connect with me on [LinkedIn](https://www.linkedin.com/in/gaurav-pande-b013104a).
 
 Things we do however small they are, things we follow around us, the life we live, somehow directly or indirectly affects the universe. Universe is a big pool of life and I am just a little tiny drop of it living here on earth at its fullest :).
 
