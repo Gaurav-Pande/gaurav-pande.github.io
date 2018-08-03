@@ -9,7 +9,7 @@ permalink: /about/
 ### Stay Hungry Stay Foolish
 
 
-<div style="text-align:center"><span style="color:red; font-family:Georgia; font-size:2em;">
+<div style="text-align:center"><span style="color:blue; font-family:Georgia;">
 
 Things we do however small they are, things we follow around us, the life we live, somehow directly or indirectly affects the universe. Universe is a big pool of life and I am just a little tiny drop of it living here on earth at its fullest :). Hi, I am Gaurav Pande and Thankyou for landing into my webspace :)
 
