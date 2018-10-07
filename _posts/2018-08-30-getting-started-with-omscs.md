@@ -3,7 +3,7 @@ published: true
 layout: post
 date: 2018-08-30T08:43:59.000Z
 author: Gaurav Pande
-categories: Georgia Tech Masters
+categories: Georgia_Tech_Masters
 cover: /assets/gatech.jpg
 title: Getting Started With Gatech
 ---
