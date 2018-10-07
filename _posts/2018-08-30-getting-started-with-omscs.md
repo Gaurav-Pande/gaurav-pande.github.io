@@ -15,7 +15,7 @@ All the information mentioned in this blog are my own personal experience. I mat
 
 ## Getting Started with Gatech :)
 
-So, finally here you are landing on this page after getting an admit from gatech omscs program. I  am pretty sure you must be very much excited as much as I am. In this post I am going to jot down some points which helps me through the onboarding process after you finally get an admit.
+So, finally here you are landing on this page after getting an admit from gatech omscs program. I  am pretty sure you must be very much excited as much as I am. In this post I am going to jot down some points which helps me through the onboarding process after I get an admit for the program.
 
 ### Assumptions:
 
@@ -24,9 +24,9 @@ I am assuming that you have already received a department admit and a college ad
 ### First thing first:
 
 After you get your admit, first thing you need to check is you passport account:[link](https://passport.gatech.edu). Passport is your account management portal, from where you can:
-* change your passwords. 
-* set email preferences.
-* set 2 factor authentication.
+* Change your passwords. 
+* Set email preferences.
+* Set 2 factor authentication.
 
 The most important thing is you should be able to access this portal, if not please activate your account here([link](https://passport.gatech.edu/activation/select-affiliation))  by looking up your GtID.
 
@@ -37,11 +37,11 @@ The above mentioned links are the most important points you will need to do as y
 
 "_I have received an admit and now i have to submit the official transcript, is it ok to submit he xerox or do we need to send original, if yes than which courier to use..blah blah!!_"
 
-Well this is the most frequent question that i have seen in whatsapp groups and in google plus.
+Well this is the most frequent question that I have seen in whatsapp groups and in google plus community.
 
 **** Answer:
 
-Yes you have to submit your official degree certificate(the one you get from your university) and your transcript(a compiled version of your semester marksheets).
+Yes you have to submit your official degree certificate(the one you get from your university) and your transcript(a compiled version of your all semesters marksheets).
 
 How ?
 
@@ -79,7 +79,7 @@ So Suggestion is submit the documents as soon as possible once you receive the a
 
 ## Cool, What Next than?
 
-Than prepare to an enthralling journey towards your masters :P
+Well than buckle up and get ready to start your enthralling journey :P
 
 In my opinion until your sem start do visit these links in the order I have mentioned(these will answer most of your all queries):
 
