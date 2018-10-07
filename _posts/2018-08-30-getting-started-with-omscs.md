@@ -113,7 +113,7 @@ Before that still you feel like you have some spare time,  watch the orientation
 I am not sharing links and details on these inforamtion as these things might change like for example, in our case in fall 2018 sem the courses that I have taken are not hosted on udacity, rather it was on canvas. So, better you wait for your advisors email.
 
 
-Hope these informatoin helps. Let me know if something has changed or some correction is needed :)
+Hope these informatoin helps. Let me know if something has changed or some correction is needed [gpande@gatech.edu] :)
 
 Good luck!
 
