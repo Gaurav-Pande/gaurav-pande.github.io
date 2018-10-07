@@ -39,7 +39,7 @@ The above mentioned links are the most important points you will need to do as y
 
 Well this is the most frequent question that I have seen in whatsapp groups and in google plus community.
 
-**** Answer:
+#### Answer:
 
 Yes you have to submit your official degree certificate(the one you get from your university) and your transcript(a compiled version of your all semesters marksheets).
 
