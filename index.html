@@ -3,14 +3,41 @@ layout: default
 ---
 <div class="home">
 
-<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
-  <div class="scrim {% if site.cover %}has-cover{% endif %}">
-    <header class="site-header">
-      <h1 class="title">{{ site.title }}</h1>
-      {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
-    </header>
-  </div>
-</div>
+<!-- Place somewhere in the <head> of your document -->
+    <link rel="stylesheet" href="flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="jquery.flexslider.js"></script>
+    <!-- Place in the <head>, after the three links -->
+
+
+<!-- Place somewhere in the <body> of your page -->
+<div class="flexslider">
+        <ul class="slides">
+            <li>
+            <img src="/assets/frontpagepic.jpg" />
+            </li>
+            <li>
+            <img src="/assets/gatech.jpg" />
+            </li>
+            <li>
+            <img src="/assets/horizon.jpg" />
+            </li>
+        </ul>
+        <div class="scrim {% if site.cover %}has-cover{% endif %}">
+                <header class="site-header">
+                  <h1 class="title">{{ site.title }}</h1>
+                  {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
+                </header>
+              </div>
+        </div>
+
+
+
+<script type="text/javascript" charset="utf-8">
+    $(window).load(function() {
+      $('.flexslider').flexslider();
+    });
+  </script>
 
 <div class="wrapper">
 <ul class="post-list">
