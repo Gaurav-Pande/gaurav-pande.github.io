@@ -4,6 +4,7 @@ gems:
   - jekyll-archives # Sorry, not GitHub pages friendly!
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-paginate
 
 
 # Site settings
@@ -16,11 +17,17 @@ description: >
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url:  "http://gauravpande.in"# the base hostname & protocol for your site
 cover: "/assets/coverpic.jpg"
 cover_height: 2000
 logo: "/assets/GP-icon.png"
+image1: "/assets/sea1.jpg"
+image2: "/assets/coverpic.png"
+image3: "/assets/sea2.jpg"
+image4: "/assets/sea3.jpg"
+image5: "/assets/sea4.jpg"
+image6: "/assets/interviewbit.jpg"
 
 # Build settings
 markdown: kramdown

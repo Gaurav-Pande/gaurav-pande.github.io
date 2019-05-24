@@ -1,16 +1,70 @@
 ---
 layout: default
 ---
-<div class="home">
 
-<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
-  <div class="scrim {% if site.cover %}has-cover{% endif %}">
-    <header class="site-header">
+	<div class="flexslider site-header-container has-cover">
+		<ul class="slides">
+    <li style="height: 500px; background-image: url({{ site.image1 | prepend: site.baseurl }});background-repeat: no-repeat;background-size: cover">
+		<div class="scrim {% if site.cover %}has-cover{% endif %}">
+			<header class="site-header">
       <h1 class="title">{{ site.title }}</h1>
       {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
     </header>
-  </div>
-</div>
+		</div>
+    </li>
+    <li style="height: 500px; background-image: url({{ site.image2 | prepend: site.baseurl }});background-repeat: no-repeat;background-size: cover">
+		<div class="scrim {% if site.cover %}has-cover{% endif %}">
+			<header class="site-header">
+      <h1 class="title">{{ site.title }}</h1>
+      {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
+    </header>
+		</div>
+    </li>
+    <li style="height: 500px; background-image: url({{ site.image3 | prepend: site.baseurl }});background-repeat: no-repeat;background-size: cover">
+		<div class="scrim {% if site.cover %}has-cover{% endif %}">
+			<header class="site-header">
+      <h1 class="title">{{ site.title }}</h1>
+      {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
+    </header>
+		</div>
+    </li>
+			 <li style="height: 500px; background-image: url({{ site.image4 | prepend: site.baseurl }});background-repeat: no-repeat;background-size: cover">
+		<div class="scrim {% if site.cover %}has-cover{% endif %}">
+			<header class="site-header">
+      <h1 class="title">{{ site.title }}</h1>
+      {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
+    </header>
+		</div>
+    </li>
+			 <li style="height: 500px; background-image: url({{ site.image5 | prepend: site.baseurl }});background-repeat: no-repeat;background-size: cover">
+		<div class="scrim {% if site.cover %}has-cover{% endif %}">
+			<header class="site-header">
+      <h1 class="title">{{ site.title }}</h1>
+      {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
+    </header>
+		</div>
+    </li>
+			 <li style="height: 500px; background-image: url({{ site.image6 | prepend: site.baseurl }});background-repeat: no-repeat;background-size: cover">
+		<div class="scrim {% if site.cover %}has-cover{% endif %}">
+			<header class="site-header">
+      <h1 class="title">{{ site.title }}</h1>
+      {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
+    </header>
+		</div>
+    </li>
+  </ul>
+	</div>
+
+
+
+<!--<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>-->
+  <!--<div class="scrim {% if site.cover %}has-cover{% endif %}">-->
+    <!--<header class="site-header">-->
+      <!--<h1 class="title">{{ site.title }}</h1>-->
+      <!--{% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}-->
+    <!--</header>-->
+  <!--</div>-->
+<!--</div>-->
 
 <div class="wrapper">
 <ul class="post-list">

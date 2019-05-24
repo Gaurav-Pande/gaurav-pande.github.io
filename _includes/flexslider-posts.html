@@ -1,0 +1,18 @@
+<div>
+  	<div class="home-title">
+    	<h3>Recent Posts</h3>
+  	</div>
+	<div class="flexslider">
+		<ul class="slides">
+	  		{% if site.cover %}
+	  		<li>
+	  			<a href="{{ site.url}}{{ page.permalink }}">
+		    		<img src="{{ page.image-slider }}">
+		    		<p class="flex-caption">{{ page.excerpt }}</p>
+		    	</a>
+	 		</li>
+	  		{% endif %}
+		</ul>
+	</div>
+	<p style="text-align: center"><a href="{{ site.url }}/posts-page">See All Posts</a></p>
+</div>
