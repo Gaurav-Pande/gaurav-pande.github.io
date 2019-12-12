@@ -8,7 +8,7 @@ desc: "Understanding foundations of tensorflow and Image recognition"
 
 ---
 
-**Technologies**: python3, tensorflow,tensorboard,machine learning, Deep Learning, KNN 
+**Technologies**: Python3, Tensorflow, tensorboard, machine learning, Deep Learning, KNN 
 
 **Repo Link**: [link](https://github.com/Gaurav-Pande/MLCC/tree/master/tensorflow_basics)
 
@@ -76,7 +76,10 @@ Or you can just swipe through to grasp the summary.
 * Each node in the graph is called compute node and the edges connecting the nodes are known as tensors.
 * Output of one tensor is feeded to the input of the next node.
 
-![Image](https://github.com/Gaurav-Pande/MLCC/blob/master/tensorflow_basics/assets/1.png)
+<center>
+<img src="https://github.com/Gaurav-Pande/MLCC/blob/master/tensorflow_basics/assets/1.png"/>
+</center>
+
 
 * Than we initiate a session to execute the graph.
 * And than finally we can run each nodes in the graph and can see their output.
@@ -679,17 +682,29 @@ of length of those vertical lines.
 
 * most of the distance measurements are like euclidean distance, hamming distance(remember Networking :D), etc
 
-![Image](https://github.com/Gaurav-Pande/MLCC/blob/master/tensorflow_basics/assets/2.png)
+<center>
+<img src="https://github.com/Gaurav-Pande/MLCC/blob/master/tensorflow_basics/assets/2.png"/>
+</center>
+
+
 
 ##### Distance Measures:
  
  * euclidean distance. it is like a displacement, i.e join directly two points and find the distance.
  
- ![Image](https://github.com/Gaurav-Pande/MLCC/blob/master/tensorflow_basics/assets/3.png)
+ <center>
+<img src="https://github.com/Gaurav-Pande/MLCC/blob/master/tensorflow_basics/assets/3.png"/>
+</center>
+
+ 
  
  * with grayscale images we use L1 distance(snake distance): 
  
- ![Image](https://github.com/Gaurav-Pande/MLCC/blob/master/tensorflow_basics/assets/4.png)
+ <center>
+<img src="https://github.com/Gaurav-Pande/MLCC/blob/master/tensorflow_basics/assets/4.png"/>
+</center>
+
+ 
  
  * you can observe that euclidean is more shorter than L1.
  
@@ -765,6 +780,7 @@ of length of those vertical lines.
 
 Hope you have enjoyed My notes.
 
-I learned all this from a pluralsite tutorial. [link](https://www.pluralsight.com/courses/tensorflow-understanding-foundations)
+## References:
+[link](https://www.pluralsight.com/courses/tensorflow-understanding-foundations)
   
   
