@@ -3,7 +3,7 @@ layout: page
 title:  "Gender Classifier"
 date:   2016-01-01 08:43:59
 permalink: /classifier/
-categories: ml
+categories: limbo
 desc: "spark based ml application for gender classifier"
 ---
 
