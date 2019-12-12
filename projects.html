@@ -4,10 +4,9 @@ title: "Projects"
 permalink: /projects/
 ---
 
-
-	<h2>Software Define Networking</h2>
+<h2>Machine Learning</h2>
   {% for album in site.projects %}
-	 {% if album.categories contains "sdn" %} 
+	 {% if album.categories contains "ml" %} 
 		<ul class="posts-list">
     	<li>
       	<strong>
@@ -20,9 +19,9 @@ permalink: /projects/
   {% endfor %}
 <hr>
 
-<h2>Machine Learning</h2>
+	<h2>Software Define Networking</h2>
   {% for album in site.projects %}
-	 {% if album.categories contains "ml" %} 
+	 {% if album.categories contains "sdn" %} 
 		<ul class="posts-list">
     	<li>
       	<strong>
@@ -49,6 +48,7 @@ permalink: /projects/
 	 {% endif %}
   {% endfor %}
 <hr>
+
 
 <h2>Limbo</h2>
   {% for album in site.projects %}
