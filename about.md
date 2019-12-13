@@ -25,7 +25,6 @@ I was perpetually fascinated by the miracles of science through mathematical con
 
 You can view my complete resume at <a href="https://drive.google.com/file/d/17NO0WFb84nnfCQgH5Z9s_23FtiZHIGG7/view?usp=sharing">view my resume</a> or connect with me on <a href="https://www.linkedin.com/in/gpande2/">linkedin</a>
 
-Things we do however small they are, things we follow around us, the life we live, somehow directly or indirectly affects the universe. Universe is a big pool of life and I am just a little tiny drop of it living here on earth at its fullest :).
 
  </span></div>
 
