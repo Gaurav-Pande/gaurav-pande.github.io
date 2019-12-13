@@ -11,7 +11,7 @@ permalink: /about/
 
 <div style="text-align:center"><span style="color:black; font-family:Georgia; font-size:1em;">
 
-Hi, I am Gaurav Pande and Thankyou for landing on my webspace :)
+Hi, 
 
 I am currently pursuing my masters in Computer Science(specialization-Machine Learning) from Georgia Institute of Technology. Previously I have worked for Cisco systems innovation edge team as a Software Engineer working on vast variety of use cases based on machine learning and automation. I am currently understanding Machine learning to better understand the underlying complexities and jargons. I want to understand things clearly and explain them well.
 
