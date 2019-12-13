@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-<img class="profile" src="{{ site.baseurl }}/assets/gaurav1.jpg" title="Profile Picture">
+<img class="profile" src="{{ site.baseurl }}/assets/gaurav2.JPG" title="Profile Picture">
 
 ### Stay Hungry Stay Foolish
 
