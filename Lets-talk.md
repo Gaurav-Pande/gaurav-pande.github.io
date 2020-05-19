@@ -8,7 +8,7 @@ Looking Forward to answering your message.
 
 ---
 <div style="background-image:url('/assets/horizon.jpg');height:100%;width:100%;">
-<form action="//formspree.io/email@domain.com" method="POST" style="margin: 0 auto;width:70%"  >
+<form action="//formspree.io/garvpande11235@gmail.com" method="POST" style="margin: 0 auto;width:70%"  >
     <br/>
     <fieldset style="width:90%;height=80%;border-radius:5px;">
         <label for="name">Your name</label>
