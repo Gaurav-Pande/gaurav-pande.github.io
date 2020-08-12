@@ -613,51 +613,6 @@ Once you open any file, at the top you will see the leetcode link to that questi
 <h2>Greedy Medium: See the directory named dp</h2>
 <tbody></tbody>
 </table>
-<!--- ## Backtrack Medium
-|  #  | Title | Solution | Time | Space | 
-| --- | ----- | -------- | ---- | ----- | 
-|78|[Subsets](https://leetcode.com/problems/subsets/#/description)| [Python ](./backtrack/Yu/78.py) | _O(N*(2^N))_| _O(2^N)_|
-|90|[Subsets II](https://leetcode.com/problems/subsets-ii/#/description)| [Python ](./backtrack/Yu/90.py) | _O(N*(2^N))_| _O(2^N)_  |  
-|46|[Permutations](https://leetcode.com/problems/permutations/#/description)| [Python ](./backtrack/Yu/46.py) | _O(N*(N!))_| _O(N!)_  |  
-|47|[Permutations II](https://leetcode.com/problems/permutations/#/description)| [Python ](./backtrack/Yu/47.py) | _O(N*(N!))_| _O(N!)_  | 
-|60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/#/description)| [Python ](./backtrack/Yu/60.py) | _O(N * (N!)_| _O(N)_  |
-|77|[Combinations](https://leetcode.com/problems/combinations/#/description)| [Python ](./backtrack/Yu/77.py) | _O(N*(N!))_| _O(N!)_   |
-|39|[Combination Sum](https://leetcode.com/problems/combination-sum/#/description)| [Python ](./backtrack/Yu/39.py) | _O(K * (2^N)_| _O(N)_  |  
-|40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/#/solutions)| [Python ](./backtrack/Yu/39.py) | _O(K * (2^N)_| _O(N)_  |  
-|216|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/#/description)| [Python ](./backtrack/Yu/216.py) | _O(K * (2^N)_| _O(N)_  ||
-|17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)| [Python ](./backtrack/Yu/17.py) | _O(N*(4^N))_| _O(N)_  | 
-|131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/)| [Python ](./backtrack/Yu/131.py) | _O(N*(2^N))_| _O(N)_  |  
---->
-<!---
-## Greedy Medium
-|  #  | Title | Solution | Time | Space |
-| --- | ----- | -------- | ---- | ----- | 
-|452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/#/description)| [Python ](./greedy/452.py) | _O(N)_| _O(1)_  |  
---->
-<!---
-## Dynamic Programming Easy
-|  #  | Title | Solution | Time | Space | 
-| --- | ----- | -------- | ---- | ----- | 
-|70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/#/solutions)| [Python ](./dp/70.py) | _O(N)_| _O(1)_  | Easy| 
-|53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/#/description)| [Python ](./dp/53.py) | _O(N)_| _O(N)_  | Easy|
-|198|[House Robber](https://leetcode.com/problems/house-robber/#/description)| [Python ](./dp/198.py) | _O(N)_| _O(N)_  | Easy|
---->
-<!---
-## Dynamic Programming Medium
-|  #  | Title | Solution | Time | Space | 
-| --- | ----- | -------- | ---- | ----- | 
-|64|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/#/submissions/1)| [Python ](./dp/64.py) | _O(N^2)_| _O(M*N)_  |  
-|62|[Unique Paths](https://leetcode.com/problems/unique-paths/#/description)| [Python ](./dp/62.py) | _O(N^2)_| _O(M*N)_  |  Reference #64|
-|55|[Jump Game](https://leetcode.com/problems/jump-game/)| [Python ](./dp/55.py) | _O(N^2)_| _O(1)_  |  TLE with DP/Use Greedy for O(N) Solution|
-|45|[Jump Game II](https://leetcode.com/problems/jump-game-ii/#/description)| [Python ](./dp/55.py) | _O(N^2)_| _O(1)_  |   TLE with DP/Use Greedy for O(N) Solution |
-|300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/#/description)| [Python ](./dp/300.py) | _O(N^2)_| _O(1)_  |  Use Binary-Search for NlogN Solution|
---->
-<!---
-## BitMap Easy
-|  #  | Title | Solution | Time | Space | 
-| --- | ----- | -------- | ---- | ----- | 
-|136|[Single Number](https://leetcode.com/problems/single-number/description/)| [Python ](./bitmap/136.py) | _O(N)_| _O(1)_  |
---->
 <h2>Attributions</h2>
 <p>This project has come from learning through multiple platforms like leetcode (<a href="https://leetcode.com/">link</a>), geegksforgeeks  (<a href="https://www.geeksforgeeks.org/">link</a>) and hackerrank (<a href="https://www.hackerrank.com/">link</a>). Also i have tried to maintain my project similar to what have done here: (<a href="https://github.com/yuzhoujr/leetcode">link</a>)</p>
 <h2>License</h2>
