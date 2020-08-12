@@ -1,12 +1,13 @@
 ---
+
 published: true
 layout: post
 date: 2018-08-30T08:43:59.000Z
 author: Gaurav Pande
 categories: Georgia-Tech
-tag: Georgia-Tech
 cover: /assets/gatech.jpg
 title: Getting Started With Gatech
+
 ---
 
 
