@@ -4,12 +4,16 @@ layout: post
 date: 2018-08-30T08:43:59.000Z
 author: Gaurav Pande
 categories: Georgia-Tech
+tag: Georgia-Tech
 cover: /assets/gatech.jpg
 title: Getting Started With Gatech
 ---
 
 
 ## Disclaimer 
+
+[NOTE]: I AM CURRENTLY AN ON CAMPUS STUDENT, SO THIS INFORMATION MAY BE OUTDATED. PLEASE EMAIL YOUR ADVISOR FOR DETAIL INFORMATION IF THE BELOW DOES NOT HELP.
+
 
 All the information mentioned in this blog are my own personal experience. I matriculated for fall 2018 semesters, so these opinions are based on that time.You are free to accept, reject and correct these opinions. I believe that standard process post admit does not change much over the time. Here are the points which I felt are the most important points one should know once you got an admit. You can absolutly find all these info in the faq and other documents over the web(I have shared such some important links at the end as well)
 
