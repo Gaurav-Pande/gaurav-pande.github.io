@@ -16,8 +16,18 @@ published: true
 
 ---
 
-<p>These are the List of problems that I solved in leetcode for coding practice(Few are also from GFG )
-Enjoy 😃</p>
+List of problems that I solved in leetcode for coding practice(Few are also from GFG ):
+
+# Note: I have added many new problems, but I could not get time to update here at README. Look out at the respective directory at the repo for problems.
+
+### Best way to navigate this repository:
+
+Since it is a bit difficult to manage and all the questions at one page here at README.md, I think the best way to navigate is visit the folders in this repository, as all the relevant questions are added to the relevant folders with as much discriptive name as I can.
+Once you open any file, at the top you will see the leetcode link to that question. That way you can directly jump to that question, solve and come back to see the solution if you need any help.
+
+
+
+
 <h2>Strings Easy</h2>
 <table>
 <thead>
@@ -599,57 +609,8 @@ Enjoy 😃</p>
 </tr>
 </tbody>
 </table>
-<h1>To Update:</h1>
-<h2>Backtrack Medium</h2>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Title</th>
-<th>Solution</th>
-<th>Time</th>
-<th>Space</th>
-</tr>
-</thead>
-<tbody></tbody>
-</table>
-<h2>Greedy Medium</h2>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Title</th>
-<th>Solution</th>
-<th>Time</th>
-<th>Space</th>
-</tr>
-</thead>
-<tbody></tbody>
-</table>
-<h2>Dynamic Programming Easy</h2>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Title</th>
-<th>Solution</th>
-<th>Time</th>
-<th>Space</th>
-</tr>
-</thead>
-<tbody></tbody>
-</table>
-<h2>Dynamic Programming Medium</h2>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Title</th>
-<th>Solution</th>
-<th>Time</th>
-<th>Space</th>
-</tr>
-</thead>
+<h2>Backtrack Medium: See the directory named backtracking</h2>
+<h2>Greedy Medium: See the directory named dp</h2>
 <tbody></tbody>
 </table>
 <!--- ## Backtrack Medium
