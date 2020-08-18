@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Resume
 permalink: /resume_view/
 
 ---
