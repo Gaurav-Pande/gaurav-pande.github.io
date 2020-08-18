@@ -31,10 +31,23 @@ image6: "/assets/interviewbit.jpg"
 
 # Build settings
 markdown: kramdown
-paginate: 5
-paginate_path: "/page:num/"
 inter_post_navigation: false
-highlightjs_theme: "monokai_sublime"
+highlightjs_theme: "monokai-sublime"
+
+
+# Build settings
+# markdown: kramdown
+# paginate: 5
+# paginate_path: "/page:num/"
+# inter_post_navigation: false
+h# ighlightjs_theme: "monokai_sublime"
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: "/page/:num/"
+  sort_reverse: true
+  
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
@@ -47,7 +60,11 @@ jekyll-archives:
     tag: '/tag/:name/'
 
 
-
+collections:
+  archives:
+    output: true
+    permalink: /archives/:path/
+    
 collections:
   projects:
     output: true 
