@@ -60,10 +60,6 @@ jekyll-archives:
     tag: '/tag/:name/'
 
 
-collections:
-  archives:
-    output: true
-    permalink: /archives/:path/
     
 collections:
   projects:
