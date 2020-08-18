@@ -40,7 +40,7 @@ highlightjs_theme: "monokai-sublime"
 # paginate: 5
 # paginate_path: "/page:num/"
 # inter_post_navigation: false
-h# ighlightjs_theme: "monokai_sublime"
+# highlightjs_theme: "monokai_sublime"
 
 pagination:
   enabled: true
