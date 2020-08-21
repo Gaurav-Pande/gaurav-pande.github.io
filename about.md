@@ -63,7 +63,16 @@ My research interests lie in the broad area of Natural Language Proce. Specifica
     		<li><strong>Aug 2015 → </strong> Graduated from <a href="http://gbpuat-tech.ac.in/#">College of Technology, GBPUAT</a> with a Bachelor's degree in Computer Science.</li>
     	</ul>
 
+<hr>
+        <p align="center">
+        	<quote>"The best way to predict the future is to invent it." ~ Alan Kay</quote> 
+        </p>
+
+
+
  </span></div>
+
+
 
 
 
