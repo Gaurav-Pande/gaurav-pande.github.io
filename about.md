@@ -20,7 +20,7 @@ Previously, I have worked for Cisco systems <a href="https://cisco-ie.github.io/
 <br>
 <br>
 
-I earned a Bachelor's degree in Computer Science in 2015 from <a href="http://gbpuat-tech.ac.in/#">College of Technology, GBPUAT</a>.
+I earned a Bachelor's degree in Computer Science in 2014 from <a href="http://gbpuat-tech.ac.in/#">College of Technology, GBPUAT</a>.
 
 <br>
 <br>
