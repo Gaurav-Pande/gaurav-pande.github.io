@@ -11,7 +11,7 @@ permalink: /about/
 <hr>
 <div style="text-align:justify;"><span style="color:black; font-family:Georgia; font-size:1em;">
 
-Hi! I am Gaurav, I am a 2nd year Master's student in Computer Science (Specializing in Machine Learning) at <a href="http://www.cc.gatech.edu/">Georgia Tech</a>. I am primarily doing my course work. In past semesters I have worked on research problems in the domain of Natural Language Processing under Prof <a href="https://www.cc.gatech.edu/~dyang888/index.html">Diyi yang</a>. For the summers of 2020, I'm working as a Machine Learning Intern in the Hands on Lab team at VMware.
+Hi! I am Gaurav, I am a 2nd year Master's student in Computer Science (Specializing in Machine Learning) at <a href="http://www.cc.gatech.edu/">Georgia Tech</a>. I am primarily doing my course work. In past semesters I have worked on research problems in the domain of Natural Language Processing under Prof <a href="https://www.cc.gatech.edu/~dyang888/index.html">Diyi yang</a> and Prof <a href="http://chaozhang.org/">Chao Zhang</a>. For the summers of 2020, I'm working as a Machine Learning Intern in the Hands on Lab team at VMware.
 
 <br>
 <br>
