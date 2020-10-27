@@ -15,7 +15,7 @@ Hi! I am Gaurav, I am a 2nd year Master's student in Computer Science (Specializ
 
 <br>
 <br>
-Previously, I have worked for Cisco systems <a href="https://cisco-ie.github.io/index.html">Innovation edge</a>  team as a Technical Solutions Specialist working on vast variety of use cases based on machine learning and automation. While working in Cisco, I Provided expertise in software developing in Python and Java for both front-end and back-end solutions, leveraging numerous OpenSource tools and platforms, in addition to both proprietary and industry standard APIs. I have also spend an year contributing towards an opensource organization <a href="https://github.com/opendaylight/cardinal/graphs/contributors">OpendayLight</a>: a distributed  Software Define Networking controller.
+Previously, I have worked for Cisco systems <a href="https://cisco-ie.github.io/index.html">Innovation edge</a>  team as a Software Engineer working on vast variety of use cases based on machine learning and automation. While working in Cisco, I Provided expertise in software developing in Python and Java for both front-end and back-end solutions, leveraging numerous OpenSource tools and platforms, in addition to both proprietary and industry standard APIs. I have also spend an year contributing towards an opensource organization <a href="https://github.com/opendaylight/cardinal/graphs/contributors">OpendayLight</a>: a distributed  Software Define Networking controller.
 
 <br>
 <br>
