@@ -47,7 +47,7 @@ In my spare time I enjoy hiking, cycling, reading books and playing guitar for f
 
 My research interests lie in the broad area of Natural Language Proce. Specifically, I'm interested in building AI agents, that can communicate (Natural Langauge Processing) and act (Robotics) while being grounded in a given environment (Computer vision).
  -->
-<p style="color:red;">I am on the job market for full-time SDE-ML or TSS(Technical Solutions Specialist) positions. Please do mail me if interested!</p>
+<p style="color:red;">I am on the job market for full-time SDE-ML or SWE positions. Please do mail me if interested!</p>
 
 <h3>News</h3>
 <hr>
