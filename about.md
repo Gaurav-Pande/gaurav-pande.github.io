@@ -32,7 +32,7 @@ In my spare time I enjoy hiking, cycling, reading books and playing guitar for f
 <br>
 <br>
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     <a href="mailto:gpande@gatech.edu"> E-mail </a> &nbsp; | &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     <a href="mailto:gpande@gatech.edu"> E-mail </a> &nbsp; | &nbsp;
 <a href="https://www.gauravpande.in/Resume/"> CV </a> &nbsp; | &nbsp;
 <a href="https://www.linkedin.com/in/gpande2/"> LinkedIn </a> &nbsp; | &nbsp;
 <a href="https://github.com/Gaurav-Pande"> Github </a> &nbsp; | &nbsp;
@@ -55,7 +55,7 @@ My research interests lie in the broad area of Natural Language Proce. Specifica
 <h3>News</h3>
 <hr>
     	<ul>
-      <li><strong>February 2021 → Started working as Full time Software Engineer at Microsoft Azure platform.</li>
+      <li><strong>February 2021 → </strong> Started working as Full time Software Engineer at Microsoft Azure platform.</li>
       <li><strong>December 2020 → </strong> <a href="https://gatech.meritpages.com/stories/Gaurav-Pande-Receives-Degree-from-Georgia-Tech-/47933228/">Graduated</a>  from Georgia tech with Masters Degree in Computer science</li>
     	<li><strong>Aug 2020 → </strong> Started serving as the Graduate Teaching Assistant for the <a href="http://omscs.gatech.edu/cs-6601-artificial-intelligence">CS6601: Intro to Artificial Intelligence</a>, a grad level class at Georgia Tech under Prof  Thad Starner.</li>
         <li><strong>May 2020 → </strong> Started Summer internship at Vmware, working on Hands On Lab: Recommendation system team.</li>
