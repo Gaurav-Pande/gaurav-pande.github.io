@@ -4,7 +4,7 @@ title: Contact Me
 permalink: /talk/
 ---
 
-Looking Forward to answering your message.
+Looking forward to hear from you.
 
 ---
 <div style="background-image:url('/assets/horizon.jpg');height:100%;width:100%;">
